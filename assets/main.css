@@ -72,12 +72,20 @@ body.scroll-lock {
   overflow: hidden;
 }
 
+a {
+  @apply transition duration-200 hover:text-purple-700
+}
+
 nav {
   background-image: url('~/assets/img/bg-nav.png');
 }
 
-a {
-  @apply transition duration-200 hover:text-purple-700
+header {
+  background-image: url('~/assets/img/bg-header.png');
+}
+
+header button {
+  background-image: url('~/assets/img/bg-button-pink.png');
 }
 
 /* --- vue transitions --- */

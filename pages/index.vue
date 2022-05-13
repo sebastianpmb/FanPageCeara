@@ -112,19 +112,25 @@
     </nav>
 
     <header
-      class="bg-center py-24 xl:bg-left 2xl:bg-cover"
-      style="background-image: url('https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"
+      class="bg-center bg-cover bg-black py-32"
     >
-      <div class="container min-h-screen pb-32">
-        <h1 class="mb-16 font-gilroy font-bold text-5xl md:text-7xl lg:text-8xl">
-          BEM VINDO AO <br>
-          TEMPLATE LP
-        </h1>
-        <p class="text-2xl font-medium">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          similique voluptates eius quod inventore consequatur culpa, harum
-          reiciendis est repellat fugiat minima pariatur autem soluta,
-          perspiciatis adipisci impedit dolores suscipit.
+      <div class="container font-tusker text-center">
+        <article class="w-80 mx-auto md:w-8/12 xl:w-6/12 2xl:px-12">
+          <p class=" text-pink-300 text-xl md:text-2xl">ESCOLHA AGORA A NOVA</p>
+          <h1 class="font-gilroy font-bold text-white text-7xl md:text-8xl lg:text-9xl">
+            <span class="mr-1.5">Nação</span><br>
+            <span class="block -mt-1.5 md:-mt-3 lg:-mt-5">Alvinegra</span>
+          </h1>
+          <img class="w-48 -mt-2 mb-6 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
+               src="~/assets/img/tag-meninas-do-vozao.png"
+               alt="Tarja Nação Alvinegra - Meninas do Vozão" />
+          <button id="btn-header" class="mb-14 py-3 px-20 font-noodle rounded text-white text-3xl md:text-4xl">
+            VOTE AGORA!
+          </button>
+        </article>
+        <p class="font-sans text-xs text-white lg:w-8/12 lg:mx-auto xl:w-6/12 2xl:px-12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.
         </p>
       </div>
     </header>
