@@ -49,6 +49,11 @@
   src:  url('~/assets/fonts/TuskerGrotesk-4500Medium.otf') format('opentype'),
         url('~/assets/fonts/TuskerGrotesk-4500Medium.ttf') format('ttf');
 }
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url('~/assets/fonts/bignoodletitling.woff2') format('woff2'),
+  url('~/assets/fonts/bignoodletitling.ttf') format('ttf');
+}
 
 html {
   font-family: 'OpenSans', sans-serif;

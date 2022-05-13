@@ -12,7 +12,8 @@ module.exports = {
         sans: ['OpenSans', 'ui-sans-serif', 'system-ui'],
         gilroy: ['Gilroy', 'ui-sans-serif', 'system-ui'],
         ind: ['Industry', 'ui-sans-serif', 'system-ui'],
-        tusker: ['TuskerGrotesk', 'ui-sans-serif', 'system-ui']
+        tusker: ['TuskerGrotesk', 'ui-sans-serif', 'system-ui'],
+        noodle: ['BigNoodleTitling', 'ui-sans-serif', 'system-ui']
       },
       colors: {
         purple: {
