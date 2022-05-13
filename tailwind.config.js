@@ -8,16 +8,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['OpenSans', 'ui-sans-serif', 'system-ui'],
+        gilroy: ['Gilroy', 'ui-sans-serif', 'system-ui'],
+        ind: ['Industry', 'ui-sans-serif', 'system-ui'],
+        tusker: ['TuskerGrotesk', 'ui-sans-serif', 'system-ui']
+      },
       colors: {
-        yellow: {
-          300: "#fbe526",
+        purple: {
+          700: "#7d00cc"
         },
-        neutral: {
-          300: "#d4d4d4",
+        pink: {
+          300: "#d340d7"
         },
         stone: {
           900: "#1f1f1f",
-          950: "#686868",
+          950: "#686868"
         },
       },
     },

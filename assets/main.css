@@ -2,13 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src:  url('~/assets/fonts/Gilroy-Black.woff2') format('woff2'),
+        url('~/assets/fonts/Gilroy-Black.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  src:  url('~/assets/fonts/Gilroy-Heavy.woff2') format('woff2'),
+        url('~/assets/fonts/Gilroy-Heavy.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  src:  url('~/assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('~/assets/fonts/Gilroy-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Industry';
+  font-weight: 600;
+  src:  url('~/assets/fonts/Industry-Demi.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 800;
+  src:  url('~/assets/fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('~/assets/fonts/OpenSans-ExtraBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  src:  url('~/assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('~/assets/fonts/OpenSans-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  src:  url('~/assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('~/assets/fonts/OpenSans-SemiBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'TuskerGrotesk';
+  font-weight: 500;
+  src:  url('~/assets/fonts/TuskerGrotesk-4500Medium.otf') format('opentype'),
+        url('~/assets/fonts/TuskerGrotesk-4500Medium.ttf') format('ttf');
+}
+
 html {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-size: 16px;
-  background-color: #0b0b0b;
+  background-color: #e2dede;
   min-width: 425px;
   scroll-behavior: smooth;
-  @apply text-white;
+  @apply text-zinc-900;
 }
 
 .container {
