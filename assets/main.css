@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 16px;
+  background-color: #0b0b0b;
+  min-width: 425px;
+  scroll-behavior: smooth;
+  @apply text-white;
+}
+
+.container {
+  @apply mx-auto px-10 lg:px-5 xl:px-24;
+}
+
+body.scroll-lock {
+  overflow: hidden;
+}
+
+
+/* --- vue transitions --- */
+.nav-enter-active {
+  animation: slide-in 0.4s;
+}
+.nav-leave-active {
+  animation: slide-in 0.3s reverse;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
