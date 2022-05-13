@@ -787,50 +787,50 @@ export default {
       partners: [
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         },
         {
           imageSrc: 'https://picsum.photos/60/60',
-          imageAlt: 'Logo Zé Delivery',
-          name: 'Zé Delivery',
+          imageAlt: 'Logo Lorem Ipsum',
+          name: 'Lorem Ipsum',
           desc: '10% de desconto em todas as compras'
         }
       ],
