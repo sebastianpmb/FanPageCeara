@@ -12,33 +12,33 @@
         >
           <div class="w-full flex justify-end">
             <button class="flex content-center mr-12 hover:text-purple-700" @click="closeSideBar()">
-              <font-awesome-icon class="fa-2x" icon="xmark" />
-              <span class="text-xl ml-2 mt-0.5">Fechar</span>
+              <font-awesome-icon class="fa-2x px-1 -mt-1" icon="xmark" />
+              <span class="ml-2">Fechar</span>
             </button>
           </div>
           <ul class="mt-12 w-full" @click="closeSideBar()">
             <a href="#planos" class="hover:text-neutral-900">
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
                 PROJETO
               </li>
             </a>
             <a href="#setores" class="hover:text-neutral-900">
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
                 CAMISA 2020
               </li>
             </a>
             <a href="#parceiros" class="hover:text-neutral-900">
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
                 REGULAMENTO
               </li>
             </a>
             <a href="#perguntas" class="hover:text-neutral-900">
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
                 FAQ
               </li>
             </a>
             <a href="" class="hover:text-neutral-900">
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
                 CLIQUE E VOTE
               </li>
             </a>
@@ -50,28 +50,28 @@
     <!-- navbar on top -->
     <nav class="relative w-full font-ind bg-cover bg-no-repeat"
     >
-      <section class="relative container flex justify-end items-center h-24 px-5 lg:justify-center">
-        <img class="absolute top-0 left-0 w-56 mt-5 -ml-4 xl:w-72 xl:mt-0 xl:ml-0"
+      <section class="relative container flex justify-end items-center h-24 pt-6 px-5 lg:justify-center xl:h-28">
+        <img class="absolute top-0 left-0 w-56 mt-5 -ml-4 xl:w-80 xl:mt-3 xl:-ml-16"
              src="~/assets/img/logo.png"
              alt="Logo Nação Alvinegra - Meninas do Vozão" />
-        <ul class="hidden flex-row justify-between items-center lg:flex lg:w-7/12 xl:w-8/12 xl:px-6">
-          <li class="text-xl lg:text-lg xl:text-xl">
+        <ul class="hidden flex-row justify-between items-center lg:flex lg:w-7/12 xl:w-8/12 xl:px-10">
+          <li class="text-pink-300 text-base">
             <a href="#planos">PROJETO</a>
           </li>
           |
-          <li class="text-xl lg:text-lg xl:text-xl">
+          <li class="text-base">
             <a href="#setores">CAMISA 2020</a>
           </li>
           |
-          <li class="text-xl lg:text-lg xl:text-xl">
+          <li class="text-base">
             <a href="#parceiros">REGULAMENTO</a>
           </li>
           |
-          <li class="text-xl lg:text-lg xl:text-xl">
+          <li class="text-base">
             <a href="#perguntas">FAQ</a>
           </li>
           |
-          <li class="text-xl lg:text-lg xl:text-xl">
+          <li class="text-base">
             <a href="">CLIQUE E VOTE</a>
           </li>
           <div class="flex absolute right-0 mr-8">
@@ -83,7 +83,7 @@
               <div class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black lg:-mt-2">
                 1
               </div>
-              <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9">
+              <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9 xl:w-11 xl:h-11">
                 <font-awesome-icon class="fa-2x mt-2 text-gray-600" icon="user"/>
               </div>
             </button>
@@ -93,7 +93,7 @@
         <!-- mobile buttons -->
         <div class="flex items-center lg:hidden">
           <button class="hover:text-purple-700" @click="openSideBar()">
-            <font-awesome-icon class="fa-2x" icon="bars"/>
+            <font-awesome-icon class="fa-2x px-1" icon="bars"/>
           </button>
           <div class="ml-5 text-right font-sans text-xs md:ml-8">
             <p class="uppercase font-extrabold">John Doe</p>
@@ -162,11 +162,11 @@
                   <span class="bg-white rounded-lg py-1 px-8 text-sm text-black">{{ card.type }}</span>
                   <div class="flex h-32 justify-between pt-7">
                     <div class="text-lg font-black uppercase">
-                      <h4 class="mb-2">
+                      <h4 class="mb-2 text-white">
                         <span class="whitespace-pre-line">{{ card.title }}</span>
                       </h4>
                       <button
-                        class="text-xs text-purple-700 font-light"
+                        class="text-xs text-pink-300 font-light"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModalCenteredScrollable"
                         @click="clickCardDetails(card)"
@@ -187,7 +187,7 @@
                   class="flex flex-col align-middle justify-center h-16 px-2
                 text-center font-light bg-black"
                 >
-                  <span class="whitespace-pre-line">{{ card.subtitle }}</span>
+                  <span class="whitespace-pre-line text-white">{{ card.subtitle }}</span>
                 </div>
                 <div
                   v-if="card.desc"
@@ -208,8 +208,8 @@
                   </li>
                 </ul>
                 <button
-                  class="relative z-10 w-full py-5 border border-transparent bg-purple-700 text-black font-black uppercase
-                hover:bg-yellow-400 focus:bg-yellow-400 outline-yellow-500 rounded-b-2xl"
+                  class="relative z-10 w-full py-5 border border-transparent bg-purple-700 text-white font-black uppercase
+                hover:bg-purple-800 focus:bg-purple-800 outline-purple-900 rounded-b-2xl"
                 >
                   {{ card.button }}
                 </button>
@@ -468,10 +468,10 @@
       </div>
       <!-- copyright text  -->
       <div class="mt-12">
-        <p class="text-center text-neutral-300 text-sm">
+        <p class="text-center text-black text-sm">
           Lorem ID © 2022
         </p>
-        <p class="text-center text-neutral-300 text-sm">
+        <p class="text-center text-black text-sm">
           Todos os direitos reservados
         </p>
       </div>
