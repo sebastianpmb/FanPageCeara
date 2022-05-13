@@ -124,8 +124,10 @@
           </h3>
           <article class="pb-12 flex flex-col md:flex-row md:flex-wrap md:justify-center">
             <div v-for="(card, i) in plan.cards" :key="i" class="md:w-1/2 lg:w-1/3 mb-8">
-              <div class="overflow-hidden mx-2 mt-5 rounded-2xl shadow-2xl drop-shadow-lg hover:scale-105 transition duration-100"
-                   @click="clickCardDetails(card)">
+              <div
+                class="overflow-hidden mx-2 mt-5 rounded-2xl shadow-2xl drop-shadow-lg hover:scale-105 transition duration-100"
+                @click="clickCardDetails(card)"
+              >
                 <div class="bg-stone-950 pt-4 pl-10 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
                   <span class="bg-white rounded-lg py-1 px-8 text-sm text-black">{{ card.type }}</span>
                   <div class="flex h-32 justify-between pt-7">
@@ -134,7 +136,7 @@
                         <span class="whitespace-pre-line">{{ card.title }}</span>
                       </h4>
                       <button
-                        class="text-xs text-yellow-300 font-light"
+                        class="text-xs text-purple-700 font-light"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModalCenteredScrollable"
                         @click="clickCardDetails(card)"
@@ -143,7 +145,7 @@
                       </button>
                     </div>
                     <div
-                      class="flex flex-col justify-center w-1/3 mt-10 text-center text-black bg-yellow-300"
+                      class="flex flex-col justify-center w-1/3 mt-10 text-center text-black bg-purple-700"
                       style="clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%)"
                     >
                       <span class="font-black text-lg">{{ card.price[0] }}</span>
@@ -175,8 +177,10 @@
                     </p>
                   </li>
                 </ul>
-                <button class="relative z-10 w-full py-5 border border-transparent bg-yellow-300 text-black font-black uppercase
-                hover:bg-yellow-400 focus:bg-yellow-400 outline-yellow-500 rounded-b-2xl">
+                <button
+                  class="relative z-10 w-full py-5 border border-transparent bg-purple-700 text-black font-black uppercase
+                hover:bg-yellow-400 focus:bg-yellow-400 outline-yellow-500 rounded-b-2xl"
+                >
                   {{ card.button }}
                 </button>
               </div>
@@ -230,46 +234,78 @@
         <h2 class="mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">
           Perguntas Frequentes
         </h2>
-        <div class='text-neutral-700'>
+        <div class="text-neutral-700">
           <questions-accordion title="Trevor Belmont">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Alucard">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
           <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.</p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
+            </p>
 
-            <p class="pb-5">Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.</p>
+            <p class="pb-5">
+              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
+            </p>
           </questions-accordion>
         </div>
       </div>
@@ -280,7 +316,7 @@
       <div class="flex flex-col md:flex-row md:mt-20">
         <!-- title  -->
         <div class="md:w-1/4">
-          <h2 class="mb-8 text-yellow-300 text-xl">
+          <h2 class="mb-8 text-purple-700 text-xl">
             Atendimento
           </h2>
           <!-- social media links  -->
@@ -311,7 +347,7 @@
         <div class="flex mb-8 md:w-1/2">
           <!-- left menu  -->
           <div class="w-1/2">
-            <h3 class="text-yellow-300 text-xl mb-8">
+            <h3 class="text-purple-700 text-xl mb-8">
               Serviços
             </h3>
             <ul class="flex flex-col">
@@ -340,7 +376,7 @@
           </div>
           <!-- right menu  -->
           <div class="w-1/2 pl-16 md:pl-0">
-            <h3 class="text-yellow-300 text-xl mb-8">
+            <h3 class="text-purple-700 text-xl mb-8">
               Planos
             </h3>
             <ul class="flex flex-col">
