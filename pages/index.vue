@@ -5,94 +5,118 @@
       <div
         v-if="sidebar === true"
         :key="sidebar"
-        class="fixed inset-0 z-50 overflow-y-auto w-screen h-min-screen bg-stone-900"
+        class="fixed inset-0 z-50 overflow-y-auto w-screen h-min-screen bg-gray-200 font-ind"
       >
-        <nav
+        <div
           class="w-full mb-24 pt-12 flex flex-col justify-end items-center"
         >
           <div class="w-full flex justify-end">
-            <button class="flex content-center mr-12 hover:text-yellow-300" @click="closeSideBar()">
+            <button class="flex content-center mr-12 hover:text-purple-700" @click="closeSideBar()">
               <font-awesome-icon class="fa-2x" icon="xmark" />
               <span class="text-xl ml-2 mt-0.5">Fechar</span>
             </button>
           </div>
           <ul class="mt-12 w-full" @click="closeSideBar()">
-            <a href="#planos" class='hover:text-neutral-900'>
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 transition duration-300">
-                Planos
+            <a href="#planos" class="hover:text-neutral-900">
+              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+                PROJETO
               </li>
             </a>
-            <a href="#setores" class='hover:text-neutral-900'>
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 transition duration-300">
-                Setores
+            <a href="#setores" class="hover:text-neutral-900">
+              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+                CAMISA 2020
               </li>
             </a>
-            <a href="#parceiros" class='hover:text-neutral-900'>
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 transition duration-300">
-                Parceiros Lorem
+            <a href="#parceiros" class="hover:text-neutral-900">
+              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+                REGULAMENTO
               </li>
             </a>
-            <a href="#perguntas" class='hover:text-neutral-900'>
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 transition duration-300">
-                Perguntas Frequentes
+            <a href="#perguntas" class="hover:text-neutral-900">
+              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+                FAQ
               </li>
             </a>
-            <a href="" class='hover:text-neutral-900'>
-              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 transition duration-300">
-                Login
+            <a href="" class="hover:text-neutral-900">
+              <li class="text-xl py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+                CLIQUE E VOTE
               </li>
             </a>
           </ul>
-        </nav>
+        </div>
       </div>
     </transition>
 
+    <!-- navbar on top -->
+    <nav class="relative w-full font-ind bg-cover bg-no-repeat"
+    >
+      <section class="relative container flex justify-end items-center h-24 px-5 lg:justify-center">
+        <img class="absolute top-0 left-0 w-56 mt-5 -ml-4 xl:w-72 xl:mt-0 xl:ml-0"
+             src="~/assets/img/logo.png"
+             alt="Logo Nação Alvinegra - Meninas do Vozão" />
+        <ul class="hidden flex-row justify-between items-center lg:flex lg:w-7/12 xl:w-8/12 xl:px-6">
+          <li class="text-xl lg:text-lg xl:text-xl">
+            <a href="#planos">PROJETO</a>
+          </li>
+          |
+          <li class="text-xl lg:text-lg xl:text-xl">
+            <a href="#setores">CAMISA 2020</a>
+          </li>
+          |
+          <li class="text-xl lg:text-lg xl:text-xl">
+            <a href="#parceiros">REGULAMENTO</a>
+          </li>
+          |
+          <li class="text-xl lg:text-lg xl:text-xl">
+            <a href="#perguntas">FAQ</a>
+          </li>
+          |
+          <li class="text-xl lg:text-lg xl:text-xl">
+            <a href="">CLIQUE E VOTE</a>
+          </li>
+          <div class="flex absolute right-0 mr-8">
+            <div class="ml-5 text-right font-sans text-xs md:ml-8 lg:text-sm">
+              <p class="uppercase font-extrabold">John Doe</p>
+              <span class="text-pink-300 font-light"><a href="">EDITAR</a> | <a href="">SAIR</a></span>
+            </div>
+            <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
+              <div class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black lg:-mt-2">
+                1
+              </div>
+              <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9">
+                <font-awesome-icon class="fa-2x mt-2 text-gray-600" icon="user"/>
+              </div>
+            </button>
+          </div>
+        </ul>
+
+        <!-- mobile buttons -->
+        <div class="flex items-center lg:hidden">
+          <button class="hover:text-purple-700" @click="openSideBar()">
+            <font-awesome-icon class="fa-2x" icon="bars"/>
+          </button>
+          <div class="ml-5 text-right font-sans text-xs md:ml-8">
+            <p class="uppercase font-extrabold">John Doe</p>
+            <span class="text-pink-300 font-light"><a href="">EDITAR</a> | <a href="">SAIR</a></span>
+          </div>
+          <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
+            <div class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black">
+              1
+            </div>
+            <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden">
+              <font-awesome-icon class="fa-2x mt-2 text-gray-600" icon="user"/>
+            </div>
+          </button>
+        </div>
+      </section>
+    </nav>
+
     <header
-      class="bg-center xl:bg-left 2xl:bg-cover"
+      class="bg-center py-24 xl:bg-left 2xl:bg-cover"
       style="background-image: url('https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"
     >
       <div class="container min-h-screen pb-32">
-        <!-- navbar on top -->
-        <nav class="w-full mb-24 pt-12 pb-8 flex justify-between items-center">
-          <font-awesome-icon class="fa-7x w-16 md:w-24 mr-16" icon="shield" />
-          <ul class="hidden lg:flex flex-row justify-between items-center w-full">
-            <li class="text-xl mr-2">
-              <a href="#planos">Planos</a>
-            </li>
-            <li class="text-xl mr-2">
-              <a href="#setores">Setores</a>
-            </li>
-            <li class="text-xl mr-2">
-              <a href="#parceiros">Parceiros Lorem</a>
-            </li>
-            <li class="text-xl mr-2">
-              <a href="#perguntas">Perguntas Frequentes</a>
-            </li>
-            <li class="text-xl mr-2">
-              <a href="">Login</a>
-            </li>
-            <button class='relative fill-white w-5 hover:fill-yellow-300'>
-              <div class='absolute top-0 right-0 w-5 -mt-3.5 -mr-3.5 rounded-full bg-yellow-300 text-sm text-black'>
-                1
-              </div>
-              <shopping-cart-icon />
-            </button>
-          </ul>
-
-          <!-- mobile buttons -->
-          <div class='flex items-center lg:hidden'>
-            <button class="text-white hover:text-yellow-300" @click="openSideBar()">
-              <font-awesome-icon class="fa-2x" icon="bars" />
-            </button>
-            <button class='relative -mt-1 ml-5 fill-white w-7 hover:fill-yellow-300'>
-              <div class='absolute top-0 right-0 w-5 -mt-3.5 -mr-3.5 rounded-full bg-yellow-300 text-sm text-black'>
-                1
-              </div>
-              <shopping-cart-icon />
-            </button>
-          </div>
-        </nav>
-        <h1 class="mb-16 font-bold text-5xl md:text-7xl lg:text-8xl">
+        <h1 class="mb-16 font-gilroy font-bold text-5xl md:text-7xl lg:text-8xl">
           BEM VINDO AO <br>
           TEMPLATE LP
         </h1>

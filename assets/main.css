@@ -67,6 +67,13 @@ body.scroll-lock {
   overflow: hidden;
 }
 
+nav {
+  background-image: url('~/assets/img/bg-nav.png');
+}
+
+a {
+  @apply transition duration-200 hover:text-purple-700
+}
 
 /* --- vue transitions --- */
 .nav-enter-active {
