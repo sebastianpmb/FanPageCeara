@@ -2,8 +2,9 @@
   <div class='mb-2'>
     <div class='tab__header'>
       <a href='#'
-         class='tab__link relative z-10 p-4 block group rounded-2xl bg-white text-neutral-900
-         hover:bg-yellow-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2
+         class='tab__link relative z-0 p-4 block group rounded bg-white text-neutral-900
+         hover:bg-pink-300 hover:text-white
+         focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-300 focus-visible:ring-offset-2
          no-underline flex justify-between'
          @click.prevent='active = !active'
       >
