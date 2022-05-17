@@ -91,7 +91,7 @@ header {
   background-image: url('~/assets/img/bg-header.webp');
 }
 
-header button {
+#btn-header {
   background-image: url('~/assets/img/bg-button-pink.png');
 }
 

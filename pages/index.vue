@@ -10,12 +10,15 @@
             <span class="mr-1.5">Nação</span><br>
             <span class="block -mt-1.5 md:-mt-3 lg:-mt-5">Alvinegra</span>
           </h1>
-          <img class="w-48 -mt-2 mb-6 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
+          <img class="w-48 -mt-2 mb-16 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
                src="~/assets/img/tag-meninas-do-vozao.png"
                alt="Tarja Nação Alvinegra - Meninas do Vozão" />
-          <button id="btn-header" class="mb-14 py-3 px-20 font-noodle rounded text-white text-3xl md:text-4xl">
+          <a href="https://nacaoalvinegra.fanbase.com.br/"
+             id="btn-header"
+             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl
+             hover:text-white hover:opacity-80 md:text-4xl">
             VOTE AGORA!
-          </button>
+          </a>
         </article>
         <p class="font-sans text-xs text-white lg:w-8/12 lg:mx-auto xl:w-6/12 2xl:px-12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
