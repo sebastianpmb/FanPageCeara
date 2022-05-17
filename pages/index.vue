@@ -28,7 +28,7 @@
     </header>
 
     <!-- section 2 -->
-    <section id="camisa" class="relative bg-cover overflow-x-hidden">
+    <section id="camisa" class="relative bg-cover overflow-x-hidden pb-6">
       <img class="pt-32 max-w-md md:w-1/2 md:max-w-none md:z-20"
            src="~/assets/img/sec2-camisa.webp"
            alt="Camisa Nação Alvinegra" />
@@ -43,7 +43,7 @@
               </h2>
             </div>
             <div id="sec2-card" class="relative bg-neutral-900 w-96 mx-auto shadow-2xl transform -rotate-2 lg:w-11/12">
-              <p class="-mt-4 mb-8 pt-12 pb-10 px-8 font-light text-white text-justify text-xs transform rotate-2
+              <p class="-mt-4 mb-8 pt-8 pb-5 px-8 font-light text-white text-justify text-xs transform rotate-2
               lg:mb-16 lg:text-base lg:px-12 xl:px-24 xl:text-xl">
                 Chegamos ao segundo ano com a sua participação na criação do terceiro uniforme das Meninas do Vozão. Você,
                 que é o nosso maior patrimônio, está presente em cada detalhe, desde a criação até a escolha da cara da
