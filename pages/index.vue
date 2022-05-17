@@ -28,7 +28,7 @@
     </header>
 
     <!-- section 2 -->
-    <section id="sec2" class="relative bg-cover overflow-x-hidden">
+    <section id="camisa" class="relative bg-cover overflow-x-hidden">
       <img class="pt-32 max-w-md md:w-1/2 md:max-w-none md:z-20"
            src="~/assets/img/sec2-camisa.webp"
            alt="Camisa Nação Alvinegra" />
