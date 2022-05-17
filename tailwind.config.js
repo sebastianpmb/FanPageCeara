@@ -22,6 +22,9 @@ module.exports = {
         pink: {
           300: "#d340d7"
         },
+        violet: {
+          800: "#7023cc"
+        },
         stone: {
           900: "#1f1f1f",
           950: "#686868"

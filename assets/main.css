@@ -33,15 +33,20 @@
 }
 @font-face {
   font-family: 'OpenSans';
-  font-weight: 600;
+  font-weight: 400;
   src:  url('~/assets/fonts/OpenSans-Regular.woff2') format('woff2'),
         url('~/assets/fonts/OpenSans-Regular.ttf') format('ttf');
 }
 @font-face {
   font-family: 'OpenSans';
-  font-weight: 600;
+  font-weight: 500;
   src:  url('~/assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
         url('~/assets/fonts/OpenSans-SemiBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 300;
+  src:  url('~/assets/fonts/OpenSans-Light.woff2') format('woff2');
 }
 @font-face {
   font-family: 'TuskerGrotesk';
@@ -60,6 +65,8 @@ html {
   font-size: 16px;
   background-color: #e2dede;
   min-width: 425px;
+  max-width: 1900px;
+  margin: 0px auto;
   scroll-behavior: smooth;
   @apply text-zinc-900;
 }
@@ -81,11 +88,31 @@ nav {
 }
 
 header {
-  background-image: url('~/assets/img/bg-header.png');
+  background-image: url('~/assets/img/bg-header.webp');
 }
 
 header button {
   background-image: url('~/assets/img/bg-button-pink.png');
+}
+
+#sec2 {
+  background-image: url('~/assets/img/bg-sec-2.webp');
+}
+#sec2-card {
+  background-image: url('~/assets/img/sec2-card.png');
+}
+#sec2-frame {
+  background-image: url('~/assets/img/sec2-frame.svg');
+}
+
+#footer-mobile {
+  background-image: url('~/assets/img/footer-black-bg-sm.jpeg');
+}
+#footer-social {
+  background-image: url('~/assets/img/footer-purple-bg.png');
+}
+#footer-desk {
+  background-image: url('~/assets/img/footer-black-bg.png');
 }
 
 /* --- vue transitions --- */

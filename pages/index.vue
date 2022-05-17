@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <!-- sidebar  -->
     <transition name="nav">
       <div
@@ -116,7 +116,7 @@
     >
       <div class="container font-tusker text-center">
         <article class="w-80 mx-auto md:w-8/12 xl:w-6/12 2xl:px-12">
-          <p class=" text-pink-300 text-xl md:text-2xl">ESCOLHA AGORA A NOVA</p>
+          <p class="text-pink-300 text-xl md:text-2xl">ESCOLHA AGORA A NOVA</p>
           <h1 class="font-gilroy font-bold text-white text-7xl md:text-8xl lg:text-9xl">
             <span class="mr-1.5">Nação</span><br>
             <span class="block -mt-1.5 md:-mt-3 lg:-mt-5">Alvinegra</span>
@@ -135,347 +135,353 @@
       </div>
     </header>
 
+    <!-- section 2 -->
+    <section id="sec2" class="relative bg-cover overflow-x-hidden">
+      <img class="pt-32 max-w-md md:w-1/2 md:max-w-none md:z-20"
+           src="~/assets/img/sec2-camisa.webp"
+           alt="Camisa Nação Alvinegra" />
+      <div class="absolute inset-0">
+        <div class="relative md:container md:mx-auto">
+          <div class="relative pt-64 px-5 max-w-screen-xs mx-auto md:float-right md:pt-40 lg:w-7/12 lg:ml-auto lg:mr-0">
+            <div class="bg-white flex items-center w-80 mx-auto px-5 pt-3 pb-8 lg:w-3/4 lg:pt-5 lg:pb-10 xl:pt-10">
+              <img class="w-1/3 pr-3 lg:pr-4 xl:w-32 xl:pb-4" src="~/assets/img/sec2-frame-escudo.png" alt="Frame de escudo">
+              <h2 class="w-2/3 font-gilroy font-bold text-violet-800 text-center">
+                <span class="mr-1.5 font-normal font-tusker text-3xl lg:text-4xl xl:text-5xl">A CARA DA</span><br>
+                <span class="block -mt-3 lg:-mt-3 text-6xl lg:text-7xl xl:tracking-wide xl:text-8xl">Nação</span>
+              </h2>
+            </div>
+            <div id="sec2-card" class="relative bg-neutral-900 w-96 mx-auto shadow-2xl transform -rotate-2 lg:w-11/12">
+              <p class="-mt-4 mb-8 pt-12 pb-10 px-8 font-light text-white text-justify text-xs transform rotate-2
+              lg:mb-16 lg:text-base lg:px-12 xl:px-24 xl:text-xl">
+                Chegamos ao segundo ano com a sua participação na criação do terceiro uniforme das Meninas do Vozão. Você,
+                que é o nosso maior patrimônio, está presente em cada detalhe, desde a criação até a escolha da cara da
+                nossa NAÇÃO ALVINEGRA. <br><br>
+                Para nós, é uma enorme satisfação ter você com a gente, cantando, vibrando e apoiando. O Ceará Sporting Club
+                é você quem faz! Muito obrigado por mais um ano de parceria, e que seja uma grande temporada para as Meninas
+                do Vozão.
+              </p>
+            </div>
+            <p id="sec2-frame"
+               class="bg-contain bg-no-repeat w-80 mx-auto font-light text-center text-white py-2
+               md:text-violet-800 lg:-mt-8 xl:mt-0 xl:w-96 xl:py-3 xl:text-xl">
+              A TORCIDA <span class="font-bold">CRIA</span> E <span class="font-bold">ESCOLHE</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section id="sec3" class="relative" style="margin-top: -30%;">
+      <img src="~/assets/img/sec3-camisa-nacao.webp" alt="Fundo Camisa Nação Alvinegra">
+    </section>
+
     <!-- Planos section -->
-    <section id="planos" class="bg-white">
-      <div class="container py-24">
-        <h2 class="mb-16 text-black font-bold uppercase text-center text-5xl xl:text-6xl">
-          Planos
-        </h2>
+<!--    <section id="planos" class="bg-white">-->
+<!--      <div class="container py-24">-->
+<!--        <h2 class="mb-16 text-black font-bold uppercase text-center text-5xl xl:text-6xl">-->
+<!--          Planos-->
+<!--        </h2>-->
 
-        <!-- card details modal-->
-        <transition name="cardModal" mode="in-out">
-          <card-modal v-if="showModal" :modal-item="modalItem" :show="showModal" @close="showModal=false" />
-        </transition>
+<!--        &lt;!&ndash; card details modal&ndash;&gt;-->
+<!--        <transition name="cardModal" mode="in-out">-->
+<!--          <card-modal v-if="showModal" :modal-item="modalItem" :show="showModal" @close="showModal=false" />-->
+<!--        </transition>-->
 
-        <!-- cards -->
-        <section v-for="(plan, index) in plans" :key="index" class="mb-10">
-          <h3 class="mb-6 font-light text-black uppercase text-center text-4xl xl:text-5xl">
-            {{ plan.title }}
-          </h3>
-          <article class="pb-12 flex flex-col md:flex-row md:flex-wrap md:justify-center">
-            <div v-for="(card, i) in plan.cards" :key="i" class="md:w-1/2 lg:w-1/3 mb-8">
-              <div
-                class="overflow-hidden mx-2 mt-5 rounded-2xl shadow-2xl drop-shadow-lg hover:scale-105 transition duration-100"
-                @click="clickCardDetails(card)"
-              >
-                <div class="bg-stone-950 pt-4 pl-10 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
-                  <span class="bg-white rounded-lg py-1 px-8 text-sm text-black">{{ card.type }}</span>
-                  <div class="flex h-32 justify-between pt-7">
-                    <div class="text-lg font-black uppercase">
-                      <h4 class="mb-2 text-white">
-                        <span class="whitespace-pre-line">{{ card.title }}</span>
-                      </h4>
-                      <button
-                        class="text-xs text-pink-300 font-light"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModalCenteredScrollable"
-                        @click="clickCardDetails(card)"
-                      >
-                        Mais detalhes
-                      </button>
-                    </div>
-                    <div
-                      class="flex flex-col justify-center w-1/3 mt-10 text-center text-black bg-purple-700"
-                      style="clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%)"
-                    >
-                      <span class="font-black text-lg">{{ card.price[0] }}</span>
-                      <span class="text-xs font-normal">{{ card.price[1] }}</span>
-                    </div>
+<!--        &lt;!&ndash; cards &ndash;&gt;-->
+<!--        <section v-for="(plan, index) in plans" :key="index" class="mb-10">-->
+<!--          <h3 class="mb-6 font-light text-black uppercase text-center text-4xl xl:text-5xl">-->
+<!--            {{ plan.title }}-->
+<!--          </h3>-->
+<!--          <article class="pb-12 flex flex-col md:flex-row md:flex-wrap md:justify-center">-->
+<!--            <div v-for="(card, i) in plan.cards" :key="i" class="md:w-1/2 lg:w-1/3 mb-8">-->
+<!--              <div-->
+<!--                class="overflow-hidden mx-2 mt-5 rounded-2xl shadow-2xl drop-shadow-lg hover:scale-105 transition duration-100"-->
+<!--                @click="clickCardDetails(card)"-->
+<!--              >-->
+<!--                <div class="bg-stone-950 pt-4 pl-10 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">-->
+<!--                  <span class="bg-white rounded-lg py-1 px-8 text-sm text-black">{{ card.type }}</span>-->
+<!--                  <div class="flex h-32 justify-between pt-7">-->
+<!--                    <div class="text-lg font-black uppercase">-->
+<!--                      <h4 class="mb-2 text-white">-->
+<!--                        <span class="whitespace-pre-line">{{ card.title }}</span>-->
+<!--                      </h4>-->
+<!--                      <button-->
+<!--                        class="text-xs text-pink-300 font-light"-->
+<!--                        data-bs-toggle="modal"-->
+<!--                        data-bs-target="#exampleModalCenteredScrollable"-->
+<!--                        @click="clickCardDetails(card)"-->
+<!--                      >-->
+<!--                        Mais detalhes-->
+<!--                      </button>-->
+<!--                    </div>-->
+<!--                    <div-->
+<!--                      class="flex flex-col justify-center w-1/3 mt-10 text-center text-black bg-purple-700"-->
+<!--                      style="clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%)"-->
+<!--                    >-->
+<!--                      <span class="font-black text-lg">{{ card.price[0] }}</span>-->
+<!--                      <span class="text-xs font-normal">{{ card.price[1] }}</span>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div-->
+<!--                  class="flex flex-col align-middle justify-center h-16 px-2-->
+<!--                text-center font-light bg-black"-->
+<!--                >-->
+<!--                  <span class="whitespace-pre-line text-white">{{ card.subtitle }}</span>-->
+<!--                </div>-->
+<!--                <div-->
+<!--                  v-if="card.desc"-->
+<!--                  class="flex flex-col justify-center h-20 py-0 px-6-->
+<!--                     text-center align-text-top text-sm font-light bg-neutral-500"-->
+<!--                >-->
+<!--                  <span class="whitespace-pre-line">{{ card.desc }}</span>-->
+<!--                </div>-->
+<!--                <ul class="text-black w-full container md:px-8 xl:px-10">-->
+<!--                  <li-->
+<!--                    v-for="(item, itemIndex) in card.items"-->
+<!--                    :key="itemIndex"-->
+<!--                    class="flex flex-col justify-center h-20 py-0 border-b border-b-neutral-300 last:border-0"-->
+<!--                  >-->
+<!--                    <p class="text-center font-light text-sm">-->
+<!--                      <span class="whitespace-pre-line">{{ item }}</span>-->
+<!--                    </p>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--                <button-->
+<!--                  class="relative z-10 w-full py-5 border border-transparent bg-purple-700 text-white font-black uppercase-->
+<!--                hover:bg-purple-800 focus:bg-purple-800 outline-purple-900 rounded-b-2xl"-->
+<!--                >-->
+<!--                  {{ card.button }}-->
+<!--                </button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </article>-->
+<!--        </section>-->
+<!--      </div>-->
+<!--    </section>-->
+
+<!--    &lt;!&ndash; Q&A section &ndash;&gt;-->
+<!--    <section id="perguntas" class="bg-neutral-200 py-12 md:py-24">-->
+<!--      <div class="container">-->
+<!--        <h2 class="mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">-->
+<!--          Perguntas Frequentes-->
+<!--        </h2>-->
+<!--        <div class="text-neutral-700">-->
+<!--          <questions-accordion title="Trevor Belmont">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Alucard">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--          <questions-accordion title="Sypha Belnades">-->
+<!--            <p class="pb-5">-->
+<!--              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.-->
+<!--            </p>-->
+
+<!--            <p class="pb-5">-->
+<!--              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <!-- footer -->
+    <footer class="relative z-20 pt-8 -mt-[8%] overflow-x-hidden md:overflow-visible">
+      <!-- footer mobile -->
+      <div class="lg:hidden">
+        <section id="footer-mobile" class="relative bg-cover pb-5 transform -rotate-3 scale-110">
+          <img class="absolute w-40 right-0 mr-6 transform rotate-3 scale-90 -mt-3 shadow-xl hidden sm:mr-10 md:mr-20 lg:absolute"
+               src="~/assets/img/footer-logo.png"
+               alt="Logo Meninas do Vozão">
+          <div class="container flex flex-wrap justify-center pt-12 items-center transform rotate-3 scale-90">
+            <img class="m-3" src="~/assets/img/footer-logo-vozao.png" alt="Logo Vozão">
+            <img class="m-3" src="~/assets/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
+            <img class="m-3" src="~/assets/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
+          </div>
+        </section>
+        <!-- address and social-->
+        <section class="bg-white -mt-6 md:flex md:flex-row-reverse">
+          <article class="relative container pt-20 md:w-1/2 md:pl-0 md:-ml-12 md:pt-28">
+            <p class="text-xs">
+              <strong>Ceará Sporting Club</strong><br>
+              Avenida João Pessoa, 3532 - Porangabuçu - Ceará - CEP 60425-813 <br>
+              <a href="mailto:contato@nacaoalvinegra.com" class="underline mr-2">contato@nacaoalvinegra.com</a>
+              <font-awesome-icon :icon="['fab', 'whatsapp']" /> (85) 3052-7777
+            </p>
+          </article>
+          <!-- social -->
+          <article class="bg-white md:w-2/3">
+            <div id="footer-social" class="bg-contain bg-no-repeat w-11/12 max-w-sm pt-28 pb-16 md:w-full">
+              <div class="container flex text-sm">
+                <div class="w-1/3 text-black text-right">
+                  <p>
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'instagram']" />
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'facebook']" />
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'twitter']" />
+                  </p>
+                  <p>
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'tiktok']" />
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'instagram']" />
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'facebook']" />
+                    <font-awesome-icon class="mr-2" :icon="['fab', 'twitter']" />
+                  </p>
+                </div>
+                <div class="w-1/3 font-sans font-extrabold pl-2">
+                  <p class="text-black">
+                    sociovozao
+                  </p>
+                  <p class="text-black">
+                    cearasc
+                  </p>
+                </div>
+                <div class="w-1/3 font-sans font-extrabold">
+                  <p class="text-black">
+                    <font-awesome-icon :icon="['fab', 'youtube']" />
+                    vozaotv
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="w-full py-2 bg-black text-center text-xs">
+          <p class="container text-neutral-300">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit praesentium quos. Ab adipisci
+            architecto beatae blanditiis debitis.
+          </p>
+        </div>
+      </div>
+
+      <!-- footer desk -->
+      <div class="hidden lg:block lg:relative">
+        <section class="w-10/12 h-full -mt-6 flex flex-row-reverse items-end float-right xl:w-11/12 2xl:w-full">
+          <img class="relative" src="~/assets/img/footer-black-bg.png" alt="Footer background 2">
+          <div class="absolute top-0 w-full">
+            <article class="pt-8 flex justify-end xl:pt-16 2xl:pt-32">
+              <div class="w-5/12 pl-12 pr-20 xl:pl-32 xl:pr-12">
+                <p class="text-xs 2xl:text-sm">
+                  <strong>Ceará Sporting Club</strong><br>
+                  Avenida João Pessoa, 3532 - Porangabuçu - Ceará - <br class="" />CEP 60425-813
+                  <br>
+                  <a href="mailto:contato@nacaoalvinegra.com" class="underline mr-2">contato@nacaoalvinegra.com</a>
+                  <font-awesome-icon :icon="['fab', 'whatsapp']" /> (85) 3052-7777
+                </p>
+              </div>
+              <div class="relative w-1/3 pr-6 flex justify-between items-center xl:pr-12 xl:w-5/12">
+                <img class="absolute w-48 right-0 top-0 -mt-20 mr-6 shadow-xl xl:w-6/12 xl:-mt-32 2xl:-mt-48"
+                     src="~/assets/img/footer-logo.png"
+                     alt="Logo Meninas do Vozão">
+                <img class="w-16 xl:w-28 2xl:w-32" src="~/assets/img/footer-logo-vozao.png" alt="Logo Vozão">
+                <img class="w-16 xl:w-28 2xl:w-32" src="~/assets/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
+                <img class="w-16 xl:w-28 2xl:w-32" src="~/assets/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
+              </div>
+            </article>
+          </div>
+          <!-- social -->
+          <article class="absolute left-0 max-w-xs pr-4 xl:pr-0">
+            <div class="bg-contain bg-no-repeat w-full">
+              <img class="relative" src="~/assets/img/footer-purple-bg.png" alt="Footer background">
+              <div class="absolute top-0 w-full">
+                <div class="container flex text-sm pt-20 xl:px-0">
+                  <div class="w-1/3 text-black text-right">
+                    <p>
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']" />
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']" />
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']" />
+                    </p>
+                    <p>
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'tiktok']" />
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']" />
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']" />
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']" />
+                    </p>
+                  </div>
+                  <div class="w-1/3 font-sans font-extrabold pl-2">
+                    <p class="text-black">
+                      sociovozao
+                    </p>
+                    <p class="text-black">
+                      cearasc
+                    </p>
+                  </div>
+                  <div class="w-1/3 font-sans font-extrabold">
+                    <p class="text-black">
+                      <font-awesome-icon :icon="['fab', 'youtube']" />
+                      vozaotv
+                    </p>
                   </div>
                 </div>
-                <div
-                  class="flex flex-col align-middle justify-center h-16 px-2
-                text-center font-light bg-black"
-                >
-                  <span class="whitespace-pre-line text-white">{{ card.subtitle }}</span>
-                </div>
-                <div
-                  v-if="card.desc"
-                  class="flex flex-col justify-center h-20 py-0 px-6
-                     text-center align-text-top text-sm font-light bg-neutral-500"
-                >
-                  <span class="whitespace-pre-line">{{ card.desc }}</span>
-                </div>
-                <ul class="text-black w-full container md:px-8 xl:px-10">
-                  <li
-                    v-for="(item, itemIndex) in card.items"
-                    :key="itemIndex"
-                    class="flex flex-col justify-center h-20 py-0 border-b border-b-neutral-300 last:border-0"
-                  >
-                    <p class="text-center font-light text-sm">
-                      <span class="whitespace-pre-line">{{ item }}</span>
-                    </p>
-                  </li>
-                </ul>
-                <button
-                  class="relative z-10 w-full py-5 border border-transparent bg-purple-700 text-white font-black uppercase
-                hover:bg-purple-800 focus:bg-purple-800 outline-purple-900 rounded-b-2xl"
-                >
-                  {{ card.button }}
-                </button>
               </div>
             </div>
           </article>
         </section>
       </div>
-    </section>
-
-    <!-- Setores section -->
-    <section id="setores" class="bg-white py-12 md:py-16">
-      <div class="container">
-        <h2 class="relative mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">
-          Setores
-        </h2>
-        <div class="aspect-video mx-auto bg-gray-400 flex flex-col justify-center align-middle">
-          <h3 class="mb-8 px-12 uppercase text-black text-center text-3xl xl:text-5xl">
-            Mapa do Estádio
-          </h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Parceiros section -->
-    <section id="parceiros" class="bg-white text-black py-12 md:py-24">
-      <div class="container">
-        <h2 class="mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">
-          Parceiros Lorem
-        </h2>
-        <div class="flex flex-wrap justify-center -mx-8 lg:mx-0">
-          <div
-            v-for="(partner, partnerIndex) in partners"
-            :key="partnerIndex"
-            class="w-1/2 mb-12 px-8 text-center md:w-1/3 lg:w-1/4"
-          >
-            <img :src="partner.imageSrc" class="mx-auto mb-3 rounded-full" :alt="partner.imageAlt">
-            <h3 class="pb-3 mb-2 text-xl font-bold uppercase border-b border-black inline-block">
-              {{ partner.name }}
-            </h3>
-            <p class="text-sm">
-              {{ partner.desc }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Q&A section -->
-    <section id="perguntas" class="bg-neutral-200 py-12 md:py-24">
-      <div class="container">
-        <h2 class="mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">
-          Perguntas Frequentes
-        </h2>
-        <div class="text-neutral-700">
-          <questions-accordion title="Trevor Belmont">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Alucard">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-          <questions-accordion title="Sypha Belnades">
-            <p class="pb-5">
-              Lorem ipsum dolor sit amet, ut alii voluptaria est, ad illum inimicus deterruisset eam. His eu bonorum adipisci definiebas, no vis nostrud conclusionemque. Ad his virtute accusata, pro habemus singulis temporibus ut, ne bonorum dolores euripidis quo. No nam amet erant intellegebat. Rationibus instructior id pri, vis case abhorreant ea, id sea meis feugiat.
-            </p>
-
-            <p class="pb-5">
-              Ut vel percipit facilisi, sea partem veritus mandamus eu, at debet deleniti eos. Iudico suscipit mel ut. Per ad habeo sadipscing concludaturque. Pri lorem fastidii in, accusam honestatis signiferumque est ut, ea eos omnium senserit reprehendunt. Eu est nibh invenire.
-            </p>
-          </questions-accordion>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="container flex flex-col justify-between py-24">
-      <div class="flex flex-col md:flex-row md:mt-20">
-        <!-- title  -->
-        <div class="md:w-1/4">
-          <h2 class="mb-8 text-purple-700 text-xl">
-            Atendimento
-          </h2>
-          <!-- social media links  -->
-          <div class="flex justify-between my-20 md:hidden">
-            <a href=""><font-awesome-icon
-              class="fa-2x"
-              :icon="['fab', 'facebook']"
-            /></a>
-            <a href=""><font-awesome-icon
-              class="fa-2x"
-              :icon="['fab', 'instagram']"
-            /></a>
-            <a href=""><font-awesome-icon
-              class="fa-2x"
-              :icon="['fab', 'youtube']"
-            /></a>
-            <a href=""><font-awesome-icon
-              class="fa-2x"
-              :icon="['fab', 'tiktok']"
-            /></a>
-            <a href=""><font-awesome-icon
-              class="fa-2x"
-              :icon="['fab', 'twitter']"
-            /></a>
-          </div>
-        </div>
-        <!-- double menu  -->
-        <div class="flex mb-8 md:w-1/2">
-          <!-- left menu  -->
-          <div class="w-1/2">
-            <h3 class="text-purple-700 text-xl mb-8">
-              Serviços
-            </h3>
-            <ul class="flex flex-col">
-              <li class="mb-3">
-                <a href="">Lorem</a>
-              </li>
-              <li class="mb-3">
-                <a href="">3000+</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Loremcents</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Ingressos</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Cadeiras vitalícias</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Conselho</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Consórcio</a>
-              </li>
-            </ul>
-          </div>
-          <!-- right menu  -->
-          <div class="w-1/2 pl-16 md:pl-0">
-            <h3 class="text-purple-700 text-xl mb-8">
-              Planos
-            </h3>
-            <ul class="flex flex-col">
-              <li class="mb-3">
-                <a href="">LoremTV</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Instagram</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Twitter</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Facebook</a>
-              </li>
-              <li class="mb-3">
-                <a href="">Linkedin</a>
-              </li>
-              <li class="mb-3">
-                <a href="">TikTok</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- club logo -->
-        <div class="md:w-1/3">
-          <!-- social media links  -->
-          <div class="justify-between mb-20 hidden md:flex">
-            <a href="">
-              <font-awesome-icon
-                class="fa-2x"
-                :icon="['fab', 'facebook']"
-              /></a>
-            <a href="">
-              <font-awesome-icon
-                class="fa-2x"
-                :icon="['fab', 'instagram']"
-              /></a>
-            <a href="">
-              <font-awesome-icon
-                class="fa-2x"
-                :icon="['fab', 'youtube']"
-              /></a>
-            <a href="">
-              <font-awesome-icon
-                class="fa-2x"
-                :icon="['fab', 'tiktok']"
-              /></a>
-            <a href="">
-              <font-awesome-icon
-                class="fa-2x"
-                :icon="['fab', 'twitter']"
-              /></a>
-          </div>
-          <div class="text-center">
-            <font-awesome-icon class="fa-7x text-center mx-auto mb-12 w-28" icon="shield" />
-          </div>
-        </div>
-      </div>
-      <!-- copyright text  -->
-      <div class="mt-12">
-        <p class="text-center text-black text-sm">
-          Lorem ID © 2022
-        </p>
-        <p class="text-center text-black text-sm">
-          Todos os direitos reservados
-        </p>
-      </div>
     </footer>
+<!--    <div class="hidden lg:block w-full py-2 bg-black text-center text-xs">-->
+<!--      <p class="container pt-36 text-neutral-300">-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit praesentium quos. Ab adipisci-->
+<!--        architecto beatae blanditiis debitis.-->
+<!--      </p>-->
+<!--    </div>-->
   </div>
 </template>
 
