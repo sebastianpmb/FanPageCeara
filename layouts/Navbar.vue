@@ -19,27 +19,37 @@
           </div>
           <ul class="mt-12 w-full" @click="closeSideBar">
             <nuxt-link to="/" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
+                  :class="{'text-pink-300' : $route.path === '/'}"
+              >
                 PROJETO
               </li>
             </nuxt-link>
             <a href="#camisa" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
+                  :class="{'text-pink-300' : $route.path === '/camisa'}"
+              >
                 CAMISA 2020
               </li>
             </a>
-            <a href="#regulamento" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+            <nuxt-link to="/regulamento" class="hover:text-neutral-900">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
+                  :class="{'text-pink-300' : $route.path === '/regulamento'}"
+              >
                 REGULAMENTO
               </li>
-            </a>
-            <a href="#faq" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+            </nuxt-link>
+            <nuxt-link to="/faq" class="hover:text-neutral-900">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
+                  :class="{'text-pink-300' : $route.path === '/faq'}"
+              >
                 FAQ
               </li>
-            </a>
+            </nuxt-link>
             <a href="https://nacaoalvinegra2.fanbase.com.br/" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
+                  :class="{'text-pink-300' : $route.path === '/votacao'}"
+              >
                 CLIQUE E VOTE
               </li>
             </a>
@@ -53,23 +63,23 @@
            alt="Logo Nação Alvinegra - Meninas do Vozão"
       />
       <ul class="hidden flex-row justify-between items-center lg:flex lg:w-7/12 xl:w-8/12 xl:px-10">
-        <li class="text-pink-300 text-base">
+        <li class="text-base" :class="{'text-pink-300' : $route.path === '/'}">
           <nuxt-link to="/">PROJETO</nuxt-link>
         </li>
         |
-        <li class="text-base">
+        <li class="text-base" :class="{'text-pink-300' : $route.path === '/camisa'}">
           <a href="#camisa">CAMISA 2020</a>
         </li>
         |
-        <li class="text-base">
-          <a href="#regulamento">REGULAMENTO</a>
+        <li class="text-base" :class="{'text-pink-300' : $route.path === '/regulamento'}">
+          <nuxt-link to="/regulamento">REGULAMENTO</nuxt-link>
         </li>
         |
-        <li class="text-base">
-          <a href="#faq">FAQ</a>
+        <li class="text-base" :class="{'text-pink-300' : $route.path === '/faq'}">
+          <nuxt-link to="/faq">FAQ</nuxt-link>
         </li>
         |
-        <li class="text-base">
+        <li class="text-base" :class="{'text-pink-300' : $route.path === '/votacao'}">
           <a href="https://nacaoalvinegra2.fanbase.com.br/">CLIQUE E VOTE</a>
         </li>
         <div class="flex absolute right-0 mr-8">
