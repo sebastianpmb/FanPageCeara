@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      listStyleType: {
+        alpha: 'upper-alpha'
+      },
       fontFamily: {
         sans: ['OpenSans', 'ui-sans-serif', 'system-ui'],
         gilroy: ['Gilroy', 'ui-sans-serif', 'system-ui'],
