@@ -34,7 +34,7 @@
            alt="Camisa Nação Alvinegra" />
       <div class="absolute inset-0">
         <div class="relative md:container md:mx-auto">
-          <div class="relative pt-64 px-5 max-w-screen-xs mx-auto md:float-right md:pt-40 lg:w-7/12 lg:ml-auto lg:mr-0">
+          <div class="relative pt-80 px-5 max-w-screen-xs mx-auto md:float-right md:pt-40 lg:w-7/12 lg:ml-auto lg:mr-0">
             <div class="bg-white flex items-center w-80 mx-auto px-5 pt-3 pb-8 lg:w-3/4 lg:pt-5 lg:pb-10 xl:pt-10">
               <img class="w-1/3 pr-3 lg:pr-4 xl:w-32 xl:pb-4" src="~/assets/img/sec2-frame-escudo.png" alt="Frame de escudo">
               <h2 class="w-2/3 font-gilroy font-bold text-violet-800 text-center">
