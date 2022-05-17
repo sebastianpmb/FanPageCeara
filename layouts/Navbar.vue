@@ -86,7 +86,7 @@
             <div
               class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9 xl:w-11 xl:h-11"
             >
-              <font-awesome-icon class="fa-2x mt-2 text-gray-600" icon="user"/>
+              <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">
             </div>
           </button>
         </div>
