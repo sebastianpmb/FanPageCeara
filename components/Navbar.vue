@@ -29,7 +29,7 @@
               <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
                   :class="{'text-pink-300' : $route.fullPath === '/#camisa'}"
               >
-                CAMISA 2020
+                CAMISA 2021
               </li>
             </nuxt-link>
             <nuxt-link to="/regulamento" class="hover:text-neutral-900">
@@ -70,7 +70,7 @@
         </li>
         |
         <li class="text-base" :class="{'text-pink-300' : $route.fullPath === '/#camisa'}">
-          <nuxt-link to="/#camisa">CAMISA 2020</nuxt-link>
+          <nuxt-link to="/#camisa">CAMISA 2021</nuxt-link>
         </li>
         |
         <li class="text-base" :class="{'text-pink-300' : $route.path === '/regulamento'}">
@@ -87,7 +87,7 @@
         <div class="flex absolute right-0 mr-8">
           <div class="ml-5 text-right font-sans text-xs md:ml-8 lg:text-sm">
             <p class="uppercase font-extrabold">Vozão ID</p>
-            <span class="text-pink-300 font-light"><a href="">CRIAR CONTA</a></span>
+            <span class="text-pink-300 font-light"><a href="">Acessar ou Criar Conta</a></span>
           </div>
           <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
             <div
@@ -112,7 +112,7 @@
         </button>
         <div class="ml-5 text-right font-sans text-xs md:ml-8">
           <p class="uppercase font-extrabold">Vozão ID</p>
-          <span class="text-pink-300 font-light"><a href="">CRIAR CONTA</a></span>
+          <span class="text-pink-300 font-light"><a href="">Acessar ou Criar Conta</a></span>
         </div>
         <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
           <div v-if="profileNotify"
