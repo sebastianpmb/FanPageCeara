@@ -4,9 +4,9 @@
     <div class="lg:hidden">
       <section id="footer-mobile" class="relative bg-cover pb-5 transform -rotate-3 scale-110">
         <img
-            class="absolute w-40 right-0 mr-6 transform rotate-3 scale-90 -mt-3 shadow-xl hidden sm:mr-10 md:mr-20 lg:absolute"
-            src="~/assets/img/footer-logo.png"
-            alt="Logo Meninas do Vozão"
+          class="absolute w-40 right-0 mr-6 transform rotate-3 scale-90 -mt-3 shadow-xl hidden sm:mr-10 md:mr-20 lg:absolute"
+          src="~/assets/img/footer-logo.png"
+          alt="Logo Meninas do Vozão"
         >
         <div class="container flex flex-wrap justify-center pt-12 items-center transform rotate-3 scale-90">
           <img class="m-3" src="~/assets/img/footer-logo-vozao.png" alt="Logo Vozão">
@@ -74,12 +74,12 @@
           </div>
         </article>
       </section>
-      <div class="w-full py-2 bg-black text-center text-xs">
-        <p class="container text-neutral-300">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit praesentium quos. Ab adipisci
-          architecto beatae blanditiis debitis.
-        </p>
-      </div>
+<!--      <div class="w-full py-2 bg-black text-center text-xs">-->
+<!--        <p class="container text-neutral-300">-->
+<!--          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit praesentium quos. Ab adipisci-->
+<!--          architecto beatae blanditiis debitis.-->
+<!--        </p>-->
+<!--      </div>-->
     </div>
 
     <!-- footer desk -->
