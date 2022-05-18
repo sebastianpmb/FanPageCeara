@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-32">
+  <div class="container pt-32 pb-40">
     <div class="flex items-start mb-6">
       <img class="w-20 md:w-24 -mt-6" src="~/assets/img/regulamento-header-logo.png" alt="Logo CearáSC">
       <img class="w-20 md:w-24 ml-auto" src="~/assets/img/regulamento-header-iso.png" alt="Certificado ISO">
