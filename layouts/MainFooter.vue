@@ -27,19 +27,33 @@
         </article>
         <!-- social -->
         <article class="bg-white md:w-2/3">
-          <div id="footer-social" class="bg-contain bg-no-repeat w-11/12 max-w-sm pt-28 pb-16 md:w-full">
+          <div id="footer-social" class="bg-contain bg-no-repeat w-11/12 max-w-sm pt-28 pb-16 md:w-full c-social-links">
             <div class="container flex text-sm">
               <div class="w-1/3 text-black text-right">
                 <p>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'instagram']"/>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'facebook']"/>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'twitter']"/>
+                  <a href="https://www.instagram.com/sociovozao/" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
+                  </a>
+                  <a href="https://www.facebook.com/SocioVozaoOficial" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
+                  </a>
+                  <a href="https://twitter.com/sociovozao" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                  </a>
                 </p>
                 <p>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'tiktok']"/>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'instagram']"/>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'facebook']"/>
-                  <font-awesome-icon class="mr-2" :icon="['fab', 'twitter']"/>
+                  <a href="https://www.tiktok.com/@cearasc" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'tiktok']"/>
+                  </a>
+                  <a href="https://www.instagram.com/cearasc/" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
+                  </a>
+                  <a href="https://www.facebook.com/CearaSC" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
+                  </a>
+                  <a href="https://twitter.com/CearaSC" target="_blank">
+                    <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                  </a>
                 </p>
               </div>
               <div class="w-1/3 font-sans font-extrabold pl-2">
@@ -51,10 +65,10 @@
                 </p>
               </div>
               <div class="w-1/3 font-sans font-extrabold">
-                <p class="text-black">
+                <a href="https://www.youtube.com/c/Cearasc" target="_blank" class="text-black">
                   <font-awesome-icon :icon="['fab', 'youtube']"/>
                   vozaotv
-                </p>
+                </a>
               </div>
             </div>
           </div>
@@ -100,18 +114,32 @@
           <div class="bg-contain bg-no-repeat w-full">
             <img class="relative" src="~/assets/img/footer-purple-bg.png" alt="Footer background">
             <div class="absolute top-0 w-full">
-              <div class="container flex text-sm pt-20 xl:px-0">
+              <div class="container flex text-sm pt-20 xl:px-0 c-social-links">
                 <div class="w-1/3 text-black text-right">
                   <p>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                    <a href="https://www.instagram.com/sociovozao/" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
+                    </a>
+                    <a href="https://www.facebook.com/SocioVozaoOficial" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
+                    </a>
+                    <a href="https://twitter.com/sociovozao" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                    </a>
                   </p>
                   <p>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'tiktok']"/>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
-                    <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                    <a href="https://www.tiktok.com/@cearasc" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'tiktok']"/>
+                    </a>
+                    <a href="https://www.instagram.com/cearasc/" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'instagram']"/>
+                    </a>
+                    <a href="https://www.facebook.com/CearaSC" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'facebook']"/>
+                    </a>
+                    <a href="https://twitter.com/CearaSC" target="_blank">
+                      <font-awesome-icon class="mr-1" :icon="['fab', 'twitter']"/>
+                    </a>
                   </p>
                 </div>
                 <div class="w-1/3 font-sans font-extrabold pl-2">
@@ -123,10 +151,10 @@
                   </p>
                 </div>
                 <div class="w-1/3 font-sans font-extrabold">
-                  <p class="text-black">
+                  <a href="https://www.youtube.com/c/Cearasc" target="_blank" class="text-black">
                     <font-awesome-icon :icon="['fab', 'youtube']"/>
                     vozaotv
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

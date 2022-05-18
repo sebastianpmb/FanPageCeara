@@ -114,6 +114,9 @@ header {
 #footer-desk {
   background-image: url('~/assets/img/footer-black-bg.png');
 }
+.c-social-links a {
+  @apply hover:text-white
+}
 
 /* --- vue transitions --- */
 .nav-enter-active {
