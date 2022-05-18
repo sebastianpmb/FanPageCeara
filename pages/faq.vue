@@ -3,7 +3,7 @@
     <!-- Q&A section -->
     <section id="perguntas" class="pt-12 mb-24 md:pt-24 md:pb-32">
       <div class="container">
-        <h2 class="mb-16 uppercase font-bold text-black text-center text-5xl xl:text-6xl">
+        <h2 class="mb-16 uppercase font-ind font-bold text-black text-center text-5xl xl:text-6xl">
           Perguntas Frequentes
         </h2>
         <div class="text-neutral-700">
