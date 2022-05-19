@@ -83,8 +83,9 @@ a {
   @apply transition duration-200 hover:text-purple-700
 }
 
-nav {
+#fixed-nav {
   background-image: url('~/static/img/bg-nav.png');
+  background-color: #e2dede;
 }
 
 header {

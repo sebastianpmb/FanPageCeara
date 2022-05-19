@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <header
-      class="bg-center bg-cover bg-black py-32"
+      class="bg-center bg-cover bg-black pt-56 pb-32 xl:pt-60"
     >
       <div class="container font-tusker text-center">
         <article class="w-80 mx-auto md:w-8/12 xl:w-6/12 2xl:px-12">
