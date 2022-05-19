@@ -46,13 +46,16 @@
                 FAQ
               </li>
             </nuxt-link>
-            <a href="https://nacaoalvinegra2.fanbase.com.br/" target="_blank" class="hover:text-neutral-900">
-              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"
-                  :class="{'text-pink-300' : $route.path === '/votacao'}"
-              >
-                CLIQUE E VOTE
-              </li>
-            </a>
+<!--            <a href="https://nacaoalvinegra2.fanbase.com.br/" target="_blank" class="hover:text-neutral-900">-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-purple-700 transition duration-300"-->
+<!--                  :class="{'text-pink-300' : $route.path === '/votacao'}"-->
+<!--              >-->
+<!--                CLIQUE E VOTE-->
+<!--              </li>-->
+<!--            </a>-->
+            <li class="py-6 pl-8 border-b-2 border-neutral-700 text-neutral-400">
+              VOTE EM BREVE
+            </li>
           </ul>
         </div>
       </div>
@@ -82,26 +85,27 @@
         </li>
         |
         <li class="text-base" :class="{'text-pink-300' : $route.path === '/votacao'}">
-          <a href="https://nacaoalvinegra2.fanbase.com.br/" target="_blank">CLIQUE E VOTE</a>
+<!--          <a href="https://nacaoalvinegra2.fanbase.com.br/" target="_blank">CLIQUE E VOTE</a>-->
+          <p class="text-neutral-400">VOTE EM BREVE</p>
         </li>
         <div class="flex absolute right-0 mr-8">
-          <div class="ml-5 text-right font-sans text-xs md:ml-8 lg:text-sm">
-            <p class="uppercase font-extrabold">Vozão ID</p>
-            <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>
-          </div>
-          <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
-            <div
-              v-if="profileNotify"
-              class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black lg:-mt-2"
-            >
-              {{ profileNotify }}
-            </div>
-            <div
-              class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9 xl:w-11 xl:h-11"
-            >
-              <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">
-            </div>
-          </button>
+<!--          <div class="ml-5 text-right font-sans text-xs md:ml-8 lg:text-sm">-->
+<!--            <p class="uppercase font-extrabold">Vozão ID</p>-->
+<!--            <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>-->
+<!--          </div>-->
+<!--          <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">-->
+<!--            <div-->
+<!--              v-if="profileNotify"-->
+<!--              class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black lg:-mt-2"-->
+<!--            >-->
+<!--              {{ profileNotify }}-->
+<!--            </div>-->
+<!--            <div-->
+<!--              class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9 xl:w-11 xl:h-11"-->
+<!--            >-->
+<!--              <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">-->
+<!--            </div>-->
+<!--          </button>-->
         </div>
       </ul>
 
@@ -110,19 +114,19 @@
         <button class="hover:text-purple-700" @click="openSideBar">
           <font-awesome-icon class="fa-2x px-1" icon="bars"/>
         </button>
-        <div class="ml-5 text-right font-sans text-xs md:ml-8">
-          <p class="uppercase font-extrabold">Vozão ID</p>
-          <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>
-        </div>
-        <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
-          <div v-if="profileNotify"
-               class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black">
-            {{ profileNotify }}
-          </div>
-          <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden">
-            <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">
-          </div>
-        </button>
+<!--        <div class="ml-5 text-right font-sans text-xs md:ml-8">-->
+<!--          <p class="uppercase font-extrabold">Vozão ID</p>-->
+<!--          <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>-->
+<!--        </div>-->
+<!--        <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">-->
+<!--          <div v-if="profileNotify"-->
+<!--               class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-purple-700 text-sm text-black">-->
+<!--            {{ profileNotify }}-->
+<!--          </div>-->
+<!--          <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden">-->
+<!--            <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">-->
+<!--          </div>-->
+<!--        </button>-->
       </div>
     </section>
   </nav>

@@ -13,12 +13,17 @@
           <img class="w-48 -mt-2 mb-16 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
                src="~/assets/img/tag-meninas-do-vozao.png"
                alt="Tarja Nação Alvinegra - Meninas do Vozão" />
-          <a href="https://nacaoalvinegra2.fanbase.com.br/"
-             id="btn-header"
+<!--          <a href="https://nacaoalvinegra2.fanbase.com.br/"-->
+<!--             id="btn-header"-->
+<!--             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl-->
+<!--             hover:text-white hover:opacity-80 md:text-4xl">-->
+<!--            VOTE AGORA!-->
+<!--          </a>-->
+          <p id="btn-header"
              class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl
-             hover:text-white hover:opacity-80 md:text-4xl">
-            VOTE AGORA!
-          </a>
+             hover:text-white md:text-4xl">
+            VOTAÇÃO EM BREVE!
+          </p>
         </article>
 <!--        <p class="font-sans text-xs text-white lg:w-8/12 lg:mx-auto xl:w-6/12 2xl:px-12">-->
 <!--          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
