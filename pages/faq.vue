@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Q&A section -->
-    <section id="perguntas" class="pt-28 mb-24 md:pt-24 md:pb-32 xl:pt-60">
+    <section id="perguntas" class="pt-56 mb-24 md:pt-56 md:pb-32 xl:pt-60">
       <div class="container">
         <h2 class="mb-16 uppercase font-ind font-bold text-black text-center text-5xl xl:text-6xl">
           Perguntas Frequentes
