@@ -43,6 +43,8 @@
               </h2>
             </div>
             <div id="sec2-card" class="relative bg-neutral-900 w-96 mx-auto shadow-2xl transform -rotate-2 lg:w-11/12">
+              <div class="c-mask absolute inset-0 w-full h-full bg-opacity-0 bg-contain">
+              </div>
               <p class="-mt-4 mb-8 pt-8 pb-5 px-8 font-light text-white text-justify text-xs transform rotate-2
               lg:mb-16 lg:text-base lg:px-12 xl:px-24 xl:text-xl">
                 Chegamos ao segundo ano com a sua participação na criação do terceiro uniforme das Meninas do Vozão. Você,

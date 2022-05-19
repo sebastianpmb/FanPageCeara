@@ -84,35 +84,41 @@ a {
 }
 
 nav {
-  background-image: url('~/assets/img/bg-nav.png');
+  background-image: url('~/static/img/bg-nav.png');
 }
 
 header {
-  background-image: url('~/assets/img/bg-header.webp');
+  background-image: url('~/static/img/bg-header.webp');
 }
 
 #btn-header {
-  background-image: url('~/assets/img/bg-button-pink.png');
+  background-image: url('~/static/img/bg-button-pink.png');
 }
 
-#sec2 {
-  background-image: url('~/assets/img/bg-sec-2.webp');
+#camisa {
+  background-image: url('~/static/img/bg-sec-2.webp');
 }
-#sec2-card {
-  background-image: url('~/assets/img/sec2-card.png');
+@media only screen and (min-width: 768px) {
+  #camisa {
+    background-size: 100% 100%;
+  }
+}
+
+#sec2-card .c-mask {
+  background-image: url('~/static/img/mascara.webp');
 }
 #sec2-frame {
-  background-image: url('~/assets/img/sec2-frame.svg');
+  background-image: url('~/static/img/sec2-frame.svg');
 }
 
 #footer-mobile {
-  background-image: url('~/assets/img/footer-black-bg-sm.jpeg');
+  background-image: url('~/static/img/footer-black-bg-sm.jpeg');
 }
 #footer-social {
-  background-image: url('~/assets/img/footer-purple-bg.png');
+  background-image: url('~/static/img/footer-purple-bg.png');
 }
 #footer-desk {
-  background-image: url('~/assets/img/footer-black-bg.png');
+  background-image: url('~/static/img/footer-black-bg.png');
 }
 .c-social-links a {
   @apply hover:text-white
