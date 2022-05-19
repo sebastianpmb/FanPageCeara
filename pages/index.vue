@@ -20,8 +20,8 @@
 <!--            VOTE AGORA!-->
 <!--          </a>-->
           <p id="btn-header"
-             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl
-             hover:text-white md:text-4xl">
+             class="inline-block mb-14 py-3 px-16 font-noodle rounded text-white text-3xl
+             hover:text-white md:px-20 md:text-4xl">
             VOTAÇÃO EM BREVE!
           </p>
         </article>
