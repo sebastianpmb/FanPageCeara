@@ -44,6 +44,7 @@ import QuestionsAccordion from '~/components/Accordion'
 export default {
   name: 'faq',
   layout: 'default',
+  transition: 'pageSlide',
   components: {
     QuestionsAccordion
   }

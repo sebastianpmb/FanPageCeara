@@ -81,6 +81,7 @@
 
 export default {
   layout: 'default',
+  transition: 'pageSlide',
   name: 'IndexPage'
 }
 </script>

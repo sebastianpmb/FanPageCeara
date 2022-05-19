@@ -438,7 +438,8 @@
 
 <script>
 export default {
-  name: 'regulamento'
+  name: 'regulamento',
+  transition: 'pageSlide'
 }
 </script>
 
