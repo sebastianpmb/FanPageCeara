@@ -142,31 +142,36 @@ export default {
     return {
       sidebar: false,
       profileNotify: 0,
+      lastScrollTop: 0
     }
   },
   mounted() {
-    window.addEventListener("scroll", this.onScroll)
+    window.addEventListener("scroll", this.changeNavOnScroll)
   },
   beforeDestroy () {
-    window.removeEventListener("scroll", this.onScroll)
+    window.removeEventListener("scroll", this.changeNavOnScroll)
   },
   methods: {
-    onScroll(e) {
+    changeNavOnScroll() {
+      const st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
       const elNav = document.getElementById('fixed-nav')
       const elLogo = document.getElementById('fixed-logo')
-      if (window.top.scrollY > 100) {
+      if (st > this.lastScrollTop){
+        // downscroll code
         elNav.classList.replace('py-14', 'pt-0')
         elLogo.classList.replace('-mt-5', 'mt-0')
         elLogo.classList.replace('w-56', 'w-40')
         elLogo.classList.replace('xl:-mt-12', 'xl:-mt-5')
         elLogo.classList.replace('xl:w-80', 'xl:w-56')
       } else {
+        // upscroll code
         elNav.classList.replace('pt-0', 'py-14')
         elLogo.classList.replace('mt-0', '-mt-5')
         elLogo.classList.replace('w-40', 'w-56')
         elLogo.classList.replace('xl:-mt-5', 'xl:-mt-12')
         elLogo.classList.replace('xl:w-56', 'xl:w-80')
       }
+      this.lastScrollTop = st <= 0 ? 0 : st
     },
     openSideBar () {
       this.sidebar = true
