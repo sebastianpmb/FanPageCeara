@@ -87,7 +87,7 @@
         <div class="flex absolute right-0 mr-8">
           <div class="ml-5 text-right font-sans text-xs md:ml-8 lg:text-sm">
             <p class="uppercase font-extrabold">Vozão ID</p>
-            <span class="text-pink-300 font-light"><a href="">Acessar ou Criar Conta</a></span>
+            <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>
           </div>
           <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
             <div
@@ -112,7 +112,7 @@
         </button>
         <div class="ml-5 text-right font-sans text-xs md:ml-8">
           <p class="uppercase font-extrabold">Vozão ID</p>
-          <span class="text-pink-300 font-light"><a href="">Acessar ou Criar Conta</a></span>
+          <span class="text-pink-300 font-light"><a href="">Criar Conta</a></span>
         </div>
         <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-purple-700">
           <div v-if="profileNotify"
