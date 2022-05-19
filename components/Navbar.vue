@@ -61,7 +61,7 @@
       </div>
     </transition>
     <section id="fixed-nav"
-             class="fixed inset-x-0 bg-cover bg-no-repeat py-14 h-12 shadow-lg transform duration-300">
+             class="fixed inset-x-0 bg-cover bg-no-repeat py-8 h-12 lg:py-14 shadow-lg transform duration-300">
       <div class="relative container flex justify-end items-center h-full px-5 lg:justify-center">
         <nuxt-link to="/">
           <img id="fixed-logo"
@@ -158,14 +158,16 @@ export default {
       const elLogo = document.getElementById('fixed-logo')
       if (st > this.lastScrollTop){
         // downscroll code
-        elNav.classList.replace('py-14', 'pt-0')
+        elNav.classList.replace('py-8', 'pt-0')
+        elNav.classList.replace('lg:py-14', 'lg:pt-0')
         elLogo.classList.replace('-mt-5', 'mt-0')
         elLogo.classList.replace('w-56', 'w-40')
         elLogo.classList.replace('xl:-mt-12', 'xl:-mt-5')
         elLogo.classList.replace('xl:w-80', 'xl:w-56')
       } else {
         // upscroll code
-        elNav.classList.replace('pt-0', 'py-14')
+        elNav.classList.replace('pt-0', 'py-8')
+        elNav.classList.replace('lg:pt-0', 'lg:py-14')
         elLogo.classList.replace('mt-0', '-mt-5')
         elLogo.classList.replace('w-40', 'w-56')
         elLogo.classList.replace('xl:-mt-5', 'xl:-mt-12')
