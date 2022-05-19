@@ -17,11 +17,11 @@
               A votação do concurso vai até o dia 24/05/2022.
             </p>
           </questions-accordion>
-          <questions-accordion title="É possível votar mais de uma vez?">
-            <p class="pb-5">
-              Não, mas o seu voto pode ter um valor ainda maior. Sócios torcedores adimplentes e quem possui cadastro completo na plataforma possuem o voto com pesos diferentes na contagem da votação.
-            </p>
-          </questions-accordion>
+<!--          <questions-accordion title="É possível votar mais de uma vez?">-->
+<!--            <p class="pb-5">-->
+<!--              Não, mas o seu voto pode ter um valor ainda maior. Sócios torcedores adimplentes e quem possui cadastro completo na plataforma possuem o voto com pesos diferentes na contagem da votação.-->
+<!--            </p>-->
+<!--          </questions-accordion>-->
           <questions-accordion title="Quando saberei qual o uniforme vencedor?">
             <p class="pb-5">
               Conforme o regulamento, a previsão do lançamento do uniforme é para o dia 24/11/2022, sujeito a alterações.
