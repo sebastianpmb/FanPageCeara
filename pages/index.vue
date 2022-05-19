@@ -11,7 +11,7 @@
             <span class="block -mt-1.5 md:-mt-3 lg:-mt-5">Alvinegra</span>
           </h1>
           <img class="w-48 -mt-2 mb-16 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
-               src="~/assets/img/tag-meninas-do-vozao.png"
+               src="~/static/img/tag-meninas-do-vozao.png"
                alt="Tarja Nação Alvinegra - Meninas do Vozão" />
 <!--          <a href="https://nacaoalvinegra2.fanbase.com.br/"-->
 <!--             id="btn-header"-->
@@ -35,13 +35,13 @@
     <!-- section 2 -->
     <section id="camisa" class="relative bg-cover overflow-x-hidden pb-6">
       <img class="pt-32 max-w-md md:w-1/2 md:max-w-none md:z-20"
-           src="~/assets/img/sec2-camisa.webp"
+           src="~/static/img/sec2-camisa.webp"
            alt="Camisa Nação Alvinegra" />
       <div class="absolute inset-0">
         <div class="relative md:container md:mx-auto">
           <div class="relative pt-80 px-5 max-w-screen-xs mx-auto md:float-right md:pt-40 lg:w-7/12 lg:ml-auto lg:mr-0">
             <div class="bg-white flex items-center w-80 mx-auto px-5 pt-3 pb-8 lg:w-3/4 lg:pt-5 lg:pb-10 xl:pt-10">
-              <img class="w-1/3 pr-3 lg:pr-4 xl:w-32 xl:pb-4" src="~/assets/img/sec2-frame-escudo.png" alt="Frame de escudo">
+              <img class="w-1/3 pr-3 lg:pr-4 xl:w-32 xl:pb-4" src="~/static/img/sec2-frame-escudo.png" alt="Frame de escudo">
               <h2 class="w-2/3 font-gilroy font-bold text-violet-800 text-center">
                 <span class="mr-1.5 font-normal font-tusker text-3xl lg:text-4xl xl:text-5xl">A CARA DA</span><br>
                 <span class="block -mt-3 lg:-mt-3 text-6xl lg:text-7xl xl:tracking-wide xl:text-8xl">Nação</span>
@@ -72,7 +72,7 @@
 
     <!-- section 3 -->
     <section id="sec3" class="relative" style="margin-top: -30%;">
-      <img src="~/assets/img/sec3-camisa-nacao.webp" alt="Fundo Camisa Nação Alvinegra">
+      <img src="~/static/img/sec3-camisa-nacao.webp" alt="Fundo Camisa Nação Alvinegra">
     </section>
   </div>
 </template>

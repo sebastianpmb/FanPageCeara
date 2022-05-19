@@ -63,7 +63,7 @@
     <section class="relative container flex justify-end items-center h-24 pt-6 px-5 lg:justify-center xl:h-28">
       <nuxt-link to="/">
         <img class="absolute top-0 left-0 w-56 mt-5 -ml-4 xl:w-80 xl:mt-3 xl:-ml-16"
-             src="~/assets/img/logo.png"
+             src="~/static/img/logo.png"
              alt="Logo Nação Alvinegra - Meninas do Vozão"
         />
       </nuxt-link>
@@ -103,7 +103,7 @@
 <!--            <div-->
 <!--              class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden lg:w-9 lg:h-9 xl:w-11 xl:h-11"-->
 <!--            >-->
-<!--              <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">-->
+<!--              <img src="~/static/img/profileDefaultImage.png" alt="Perfil padrão">-->
 <!--            </div>-->
 <!--          </button>-->
         </div>
@@ -124,7 +124,7 @@
 <!--            {{ profileNotify }}-->
 <!--          </div>-->
 <!--          <div class="w-8 h-8 rounded-full bg-white border border-black overflow-hidden">-->
-<!--            <img src="~/assets/img/profileDefaultImage.png" alt="Perfil padrão">-->
+<!--            <img src="~/static/img/profileDefaultImage.png" alt="Perfil padrão">-->
 <!--          </div>-->
 <!--        </button>-->
       </div>

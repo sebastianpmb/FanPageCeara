@@ -1,9 +1,9 @@
 <template>
   <div class="container pt-32 pb-40">
     <div class="flex items-start mb-6">
-      <img class="w-20 md:w-24 -mt-6" src="~/assets/img/regulamento-header-logo.png" alt="Logo CearáSC">
-      <img class="w-20 md:w-24 ml-auto" src="~/assets/img/regulamento-header-iso.png" alt="Certificado ISO">
-      <img class="w-20 md:w-24" src="~/assets/img/regulamento-header-gptw.png" alt="Certificado Great Place to Work">
+      <img class="w-20 md:w-24 -mt-6" src="~/static/img/regulamento-header-logo.png" alt="Logo CearáSC">
+      <img class="w-20 md:w-24 ml-auto" src="~/static/img/regulamento-header-iso.png" alt="Certificado ISO">
+      <img class="w-20 md:w-24" src="~/static/img/regulamento-header-gptw.png" alt="Certificado Great Place to Work">
     </div>
     <h1 class="mb-12 text-center text-xl">
       <b>REGULAMENTO NAÇÃO ALVINEGRA FEMININA</b>
