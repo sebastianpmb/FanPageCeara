@@ -14,6 +14,7 @@
                src="~/static/img/tag-meninas-do-vozao.png"
                alt="Tarja Nação Alvinegra - Meninas do Vozão" />
           <a href="https://nacaoalvinegra2.fanbase.com.br/"
+             target="_blank"
              id="btn-header"
              class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl
              hover:text-white hover:opacity-80 md:text-4xl">
