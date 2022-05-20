@@ -13,7 +13,7 @@
           <img class="w-48 -mt-2 mb-16 md:w-56 md:-mt-3 md:ml-2 lg:w-72 lg:-mt-5 lg:ml-10 xl:ml-0"
                src="~/static/img/tag-meninas-do-vozao.png"
                alt="Tarja Nação Alvinegra - Meninas do Vozão" />
-          <a href="https://nacaoalvinegra2.fanbase.com.br/"
+          <a href="https://vote.nacaoalvinegra.com"
              target="_blank"
              id="btn-header"
              class="inline-block mb-14 py-3 px-20 font-noodle rounded text-white text-3xl
