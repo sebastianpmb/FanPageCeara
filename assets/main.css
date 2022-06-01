@@ -64,15 +64,18 @@ html {
   font-family: 'OpenSans', sans-serif;
   font-size: 16px;
   background-color: #e2dede;
-  min-width: 425px;
   max-width: 1900px;
   margin: 0px auto;
   scroll-behavior: smooth;
   @apply text-zinc-900;
 }
 
+body {
+  min-width: 375px;
+}
+
 .container {
-  @apply mx-auto px-10 lg:px-5 xl:px-24;
+  @apply mx-auto px-5 lg:px-5 xl:px-24;
 }
 
 body.scroll-lock {
