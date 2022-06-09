@@ -25,6 +25,9 @@ module.exports = {
         pink: {
           300: "#d340d7"
         },
+        yellow: {
+          300: "#f7b944"
+        },
         violet: {
           800: "#7023cc"
         },

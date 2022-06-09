@@ -83,7 +83,7 @@ body.scroll-lock {
 }
 
 a {
-  @apply transition duration-200 hover:text-purple-700
+  @apply transition duration-200 hover:text-yellow-300
 }
 
 #fixed-nav {
@@ -95,24 +95,12 @@ header {
   background-image: url('~/static/img/bg-header.webp');
 }
 
-#btn-header {
-  background-image: url('~/static/img/bg-button-pink.png');
-}
-
-#camisa {
-  background-image: url('~/static/img/bg-sec-2.webp');
-}
-@media only screen and (min-width: 768px) {
-  #camisa {
-    background-size: 100% 100%;
-  }
+#sec2 {
+  background-image: url('~/static/img/bg-ceara-sec2.webp');
 }
 
 #sec2-card .c-mask {
   background-image: url('~/static/img/mascara.webp');
-}
-#sec2-frame {
-  background-image: url('~/static/img/sec2-frame.svg');
 }
 
 #footer-mobile {
