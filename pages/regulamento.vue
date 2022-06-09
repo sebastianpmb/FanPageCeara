@@ -77,7 +77,7 @@
       </p></li>
     </ol>
     <p class="mb-2">19
-      de maio de 2022 00:00 – 23 de novembro de 2022 23:59.</p></li>
+      de maio de 2022 00:00 – 23 de novembro de 2022 23:59.</p>
     <ol start="8" class="list-decimal">
       <li><p class="mb-2">
         <b>ENDEREÇO DA APURAÇÃO:</b> AV. JOÃO PESSOA, 3532, PORANGABUÇU,
@@ -182,11 +182,11 @@
           <tr valign="top">
             <td width="325" height="82" style="border: 1px solid #000000; padding: 0in 0.05in">
               <p style="orphans: 0; widows: 0">
-				<span>2. Os outros quatro finalistas
-				ganharão um crédito de R$ 500,00 (quinhentos reais) em função
-				de VOUCHER para adquirir itens licenciados do CLUBE, nas lojas
-				oficiais do Ceará Sporting Club, e terão o prazo de 180(cento e
-				oitenta) dias para utilizá-lo.</span></p>
+                <span>2. Os outros quatro finalistas
+                ganharão um crédito de R$ 500,00 (quinhentos reais) em função
+                de VOUCHER para adquirir itens licenciados do CLUBE, nas lojas
+                oficiais do Ceará Sporting Club, e terão o prazo de 180(cento e
+                oitenta) dias para utilizá-lo.</span></p>
             </td>
             <td width="70" style="border: 1px solid #000000; padding: 0in 0.05in"><p style="orphans: 0; widows: 0">
               R$ 500,00</p>
