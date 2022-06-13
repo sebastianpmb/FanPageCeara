@@ -5,14 +5,14 @@
     >
       <div class="container font-tusker text-center">
         <article class="max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-none 2xl:px-32">
-          <p class="my-6 uppercase text-yellow-300 text-2xl sm:text-3xl lg:text-5xl">Vamos nos conhecer melhor?</p>
+          <p class="my-6 uppercase text-yellow-700 text-2xl sm:text-3xl lg:text-5xl">Vamos nos conhecer melhor?</p>
           <h1 class="mb-12 font-gilroy font-bold text-white tracking-tight leading-none text-5xl
                      sm:text-6xl md:text-7xl lg:text-9xl">
             O Ceará quer jogar com você!
           </h1>
           <a href="https://censo.nacaoalvinegra.com/"
              target="_blank"
-             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-black bg-yellow-300 text-3xl
+             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-black bg-yellow-700 text-3xl
              hover:text-black hover:opacity-80 md:text-4xl">
             QUERO PARTICIPAR!
           </a>
