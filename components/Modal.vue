@@ -41,7 +41,7 @@
             <button
               ref='btnOk'
               type='button'
-              class='inline-flex justify-center rounded-md border border-transparent bg-yellow-300 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2'
+              class='inline-flex justify-center rounded-md border border-transparent bg-yellow-700 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2'
               @click='close_modal'
             >
               Entendi, obrigado!
@@ -54,7 +54,7 @@
             <button
               ref='btnOk'
               type='button'
-              class='inline-flex justify-center rounded-md border border-transparent bg-yellow-300 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2'
+              class='inline-flex justify-center rounded-md border border-transparent bg-yellow-700 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2'
               @click='close_modal'
             >
               Entendi, obrigado!

@@ -5,8 +5,8 @@
       <section id="footer-mobile" class="relative bg-cover pb-5 transform -rotate-3 scale-110">
         <img
           class="absolute w-40 right-0 mr-6 transform rotate-3 scale-90 -mt-3 shadow-xl hidden sm:mr-10 md:mr-20 lg:absolute"
-          src="~/static/img/footer-logo.png"
-          alt="Logo Meninas do Vozão"
+          src="~/static/img/logo-NacaoAlvinegraBr.webp"
+          alt="Logo Nação Alvinegra"
         >
         <div class="container flex flex-wrap justify-center pt-12 items-center transform rotate-3 scale-90">
           <img class="m-3" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
@@ -99,9 +99,10 @@
               </p>
             </div>
             <div class="relative w-1/3 pr-6 flex justify-between items-center xl:pr-12 xl:w-5/12">
-              <img class="absolute w-48 right-0 top-0 -mt-20 mr-6 shadow-xl xl:w-6/12 xl:-mt-32 2xl:-mt-48"
-                   src="~/static/img/footer-logo.png"
-                   alt="Logo Meninas do Vozão"
+              <img class="absolute w-56 right-0 top-0 -mt-16 mr-6 px-1 shadow-xl
+                          xl:w-6/12 xl:-mt-24 2xl:-mt-40 2xl:mr-10 2xl:px-0"
+                   src="~/static/img/logo-NacaoAlvinegraBr.webp"
+                   alt="Logo Nação Alvinegra"
               >
               <img class="w-16 xl:w-28 2xl:w-32" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
               <img class="w-16 xl:w-28 2xl:w-32" src="~/static/img/footer-logo-socio.png" alt="Logo Sócio Vozão">

@@ -12,43 +12,43 @@
           class="w-full mb-24 pt-12 flex flex-col justify-end items-center"
         >
           <div class="w-full flex justify-end">
-            <button class="flex content-center mr-12 hover:text-yellow-300" @click="closeSideBar">
+            <button class="flex content-center mr-12 hover:text-yellow-700" @click="closeSideBar">
               <font-awesome-icon class="fa-2x px-1 -mt-1" icon="xmark"/>
               <span class="ml-2">Fechar</span>
             </button>
           </div>
           <ul class="mt-12 w-full" @click="closeSideBar">
 <!--            <nuxt-link to="/" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-300 underline underline-offset-4 hover:text-black' : $route.fullPath === '/'}"-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
+<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.fullPath === '/'}"-->
 <!--              >-->
 <!--                PROJETO-->
 <!--              </li>-->
 <!--            </nuxt-link>-->
 <!--            <nuxt-link :to="{ path: '/',hash:'#sec2'}" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-300 underline underline-offset-4 hover:text-black' : $route.fullPath === '/#sec2'}"-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
+<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.fullPath === '/#sec2'}"-->
 <!--              >-->
 <!--                VOZÃO-->
 <!--              </li>-->
 <!--            </nuxt-link>-->
 <!--            <nuxt-link to="/regulamento" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-300 underline underline-offset-4 hover:text-black' : $route.path === '/regulamento'}"-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
+<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/regulamento'}"-->
 <!--              >-->
 <!--                REGULAMENTO-->
 <!--              </li>-->
 <!--            </nuxt-link>-->
 <!--            <nuxt-link to="/faq" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-300 underline underline-offset-4 hover:text-black' : $route.path === '/faq'}"-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
+<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/faq'}"-->
 <!--              >-->
 <!--                FAQ-->
 <!--              </li>-->
 <!--            </nuxt-link>-->
 <!--            <a href="https://censo.nacaoalvinegra.com/" target="_blank" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-300 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-300 underline underline-offset-4 hover:text-black' : $route.path === '/censo'}"-->
+<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
+<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/censo'}"-->
 <!--              >-->
 <!--                CLIQUE E PARTICIPE-->
 <!--              </li>-->
@@ -63,15 +63,15 @@
 
     <section id="fixed-nav"
              class="fixed inset-x-0 h-12 bg-cover bg-no-repeat shadow-lg transform duration-300"
-             :class="[scrollDown ? 'pt-0 lg:pt-0' : 'py-8 lg:py-12']"
+             :class="[scrollDown ? 'lg:h-16' : 'h-16 lg:h-20 xl:h-24']"
     >
       <div class="relative container flex justify-end items-center h-full px-5 lg:justify-center">
         <nuxt-link to="/">
           <img id="fixed-logo"
-               class="absolute top-0 left-0 -ml-4 xl:-ml-10 transform duration-300"
-               :class="[scrollDown ? 'mt-0 w-40 xl:-mt-5 xl:w-56' : 'w-56 -mt-5 xl:w-80 xl:-mt-12']"
-               src="~/static/img/logo.png"
-               alt="Logo Nação Alvinegra - Meninas do Vozão"
+               class="absolute top-0 left-0 ml-3 mt-5 shadow-lg transform duration-300 -rotate-3"
+               :class="[scrollDown ? 'w-32 lg:mt-5 lg:w-48 xl:w-56' : 'ml-3 w-48 xl:mt-8 lg:w-72 xl:w-80']"
+               src="~/static/img/logo-NacaoAlvinegraBr.webp"
+               alt="Logo Nação Alvinegra"
           />
         </nuxt-link>
         <ul class="hidden flex-row justify-between items-center lg:flex lg:w-5/12 xl:w-6/12 xl:px-10">
@@ -102,10 +102,10 @@
                 <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
               </span>
             </div>
-            <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-300">
+            <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-700">
               <div
                 v-if="profileNotify"
-                class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-yellow-300 hover:text-black text-sm text-black lg:-mt-2"
+                class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-yellow-700 hover:text-black text-sm text-black lg:-mt-2"
               >
                 {{ profileNotify }}
               </div>
@@ -121,7 +121,7 @@
 
         <!-- mobile buttons -->
         <div class="flex items-center lg:hidden">
-<!--          <button class="hover:text-yellow-300" @click="openSideBar">-->
+<!--          <button class="hover:text-yellow-700" @click="openSideBar">-->
 <!--            <font-awesome-icon class="fa-2x px-1" icon="bars"/>-->
 <!--          </button>-->
           <div class="ml-5 text-right font-sans transform duration-300 md:ml-8"
@@ -132,9 +132,9 @@
               <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
             </span>
           </div>
-          <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-300">
+          <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-700">
             <div v-if="profileNotify"
-                 class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-yellow-300 hover:text-black text-sm text-black">
+                 class="absolute top-0 right-0 w-5 -mt-3 -mr-3.5 rounded-full bg-yellow-700 hover:text-black text-sm text-black">
               {{ profileNotify }}
             </div>
             <div class="rounded-full bg-white border border-black overflow-hidden transform duration-300"

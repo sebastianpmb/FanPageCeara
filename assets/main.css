@@ -83,7 +83,7 @@ body.scroll-lock {
 }
 
 a {
-  @apply transition duration-200 hover:text-yellow-300
+  @apply transition duration-200 hover:text-yellow-700
 }
 
 #fixed-nav {
