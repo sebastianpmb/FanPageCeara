@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <header
-      class="bg-center bg-cover bg-black pt-56 pb-32 xl:pt-60"
+      class="bg-center bg-cover bg-black pt-40 pb-24 lg:pt-56 xl:pb-32 xl:pt-60"
     >
       <div class="container font-tusker text-center">
         <article class="max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-none 2xl:px-32">
@@ -23,7 +23,7 @@
     <!-- section 2 -->
     <section id="sec2" class="relative bg-cover bg-center overflow-x-hidden pb-6">
       <div class="md:container md:mx-auto">
-        <div class="pt-48 px-5 pb-64 max-w-screen-xs mx-auto md:float-right md:pt-40 lg:w-7/12 lg:ml-auto lg:mr-0 xl:pb-40">
+        <div class="pt-12 px-5 pb-32 max-w-screen-xs mx-auto md:pt-12 md:pb-32 lg:w-7/12 lg:ml-auto lg:mr-0 xl:pb-40">
           <!-- white card -->
           <div class="bg-white flex items-center w-80 mx-auto px-5 pt-3 pb-8 lg:w-3/4 lg:pt-5 lg:pb-10 xl:pt-10">
             <h2 class="w-2/3 font-gilroy font-bold text-black text-center">

@@ -9,15 +9,15 @@
           alt="Logo Nação Alvinegra"
         >
         <div class="container flex flex-wrap justify-center pt-12 items-center transform rotate-3 scale-90">
-          <img class="m-3" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
-          <img class="m-3" src="~/static/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
-          <img class="m-3" src="~/static/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
+          <img class="m-5 w-28" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
+          <img class="m-5 w-28" src="~/static/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
+          <img class="m-5 w-28" src="~/static/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
         </div>
       </section>
       <!-- address and social-->
       <section class="bg-white -mt-6 md:flex md:flex-row-reverse">
-        <article class="relative container pt-20 md:w-1/2 md:pl-0 md:-ml-12 md:pt-28">
-          <p class="text-xs">
+        <article class="relative container pt-20 md:w-1/2 md:pl-0 md:-ml-12 md:pt-24 lg:pt-28">
+          <p class="text-xs mb-6">
             <strong>Ceará Sporting Club</strong><br>
             Avenida João Pessoa, 3532 - Porangabuçu - Ceará - CEP 60425-813 <br>
             <a href="mailto:contato@nacaoalvinegra.com" class="underline mr-2">contato@nacaoalvinegra.com</a>
@@ -26,9 +26,9 @@
           </p>
         </article>
         <!-- social -->
-        <article class="bg-white md:w-2/3">
-          <div id="footer-social" class="bg-contain bg-no-repeat w-11/12 max-w-sm pt-28 pb-16 md:w-full c-social-links">
-            <div class="container flex text-sm">
+        <article class="bg-white overflow-y-hidden md:w-10/12">
+          <div id="footer-social" class="bg-contain bg-no-repeat w-10/12 max-w-xs -mb-12 pt-16 pb-24 md:pt-28 md:pb-16 md:w-full c-social-links">
+            <div class="flex text-sm">
               <div class="w-1/3 text-black text-right">
                 <p>
                   <a href="https://www.instagram.com/sociovozao/" target="_blank">
@@ -104,9 +104,9 @@
                    src="~/static/img/logo-NacaoAlvinegraBr.webp"
                    alt="Logo Nação Alvinegra"
               >
-              <img class="w-16 xl:w-28 2xl:w-32" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
-              <img class="w-16 xl:w-28 2xl:w-32" src="~/static/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
-              <img class="w-16 xl:w-28 2xl:w-32" src="~/static/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
+              <img class="w-24 xl:w-28 2xl:w-36" src="~/static/img/footer-logo-vozao.png" alt="Logo Vozão">
+              <img class="w-24 xl:w-28 2xl:w-36" src="~/static/img/footer-logo-socio.png" alt="Logo Sócio Vozão">
+              <img class="w-24 xl:w-28 2xl:w-36" src="~/static/img/footer-logo-time.png" alt="Logo Vozão Time do Povo">
             </div>
           </article>
         </div>
