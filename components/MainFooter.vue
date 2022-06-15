@@ -16,7 +16,7 @@
       </section>
       <!-- address and social-->
       <section class="bg-white -mt-6 md:flex md:flex-row-reverse">
-        <article class="relative container pt-20 md:w-1/2 md:pl-0 md:-ml-12 md:pt-24 lg:pt-28">
+        <article class="relative container pt-20 md:w-1/2 md:pl-0 md:-ml-12 md:pt-16 lg:pt-28">
           <p class="text-xs mb-6">
             <strong>Ceará Sporting Club</strong><br>
             Avenida João Pessoa, 3532 - Porangabuçu - Ceará - CEP 60425-813 <br>
@@ -27,8 +27,9 @@
         </article>
         <!-- social -->
         <article class="bg-white overflow-y-hidden md:w-10/12">
-          <div id="footer-social" class="bg-contain bg-no-repeat w-10/12 max-w-xs -mb-12 pt-16 pb-24 md:pt-28 md:pb-16 md:w-full c-social-links">
-            <div class="flex text-sm">
+          <div id="footer-social"
+               class="bg-contain bg-no-repeat w-10/12 max-w-xs -mb-12 pt-16 pb-16 md:w-full c-social-links">
+            <div class="flex text-sm mb-12 md:mb-10 md:pt-2">
               <div class="w-1/3 text-black text-right">
                 <p>
                   <a href="https://www.instagram.com/sociovozao/" target="_blank">
@@ -71,6 +72,10 @@
                 </a>
               </div>
             </div>
+            <div class="container flex items-center pl-2 text-white text-xs">
+              <p>Powered by</p>
+              <img class="-mt-1 ml-2 w-20" src="~/static/img/fanbase.png" alt="Logo Fanbase">
+            </div>
           </div>
         </article>
       </section>
@@ -85,11 +90,11 @@
     <!-- footer desk -->
     <div class="hidden lg:block lg:relative">
       <section class="w-10/12 h-full -mt-6 flex flex-row-reverse items-end float-right xl:w-11/12 2xl:w-full">
-        <img class="relative" src="~/static/img/footer-black-bg.png" alt="Footer background 2">
+        <img class="relative xl:h-56 xl:w-full 2xl:h-64" src="~/static/img/footer-black-bg.png" alt="Footer background 2">
         <div class="absolute top-0 w-full">
-          <article class="pt-8 flex justify-end xl:pt-16 2xl:pt-32">
+          <article class="pt-7 flex justify-end xl:pt-16 2xl:pt-24">
             <div class="w-5/12 pl-12 pr-20 xl:pl-32 xl:pr-12">
-              <p class="text-xs 2xl:text-sm">
+              <p class="text-xs xl:pt-2 2xl:text-sm">
                 <strong>Ceará Sporting Club</strong><br>
                 Avenida João Pessoa, 3532 - Porangabuçu - Ceará - <br class=""/>CEP 60425-813
                 <br>
@@ -100,7 +105,7 @@
             </div>
             <div class="relative w-1/3 pr-6 flex justify-between items-center xl:pr-12 xl:w-5/12">
               <img class="absolute w-56 right-0 top-0 -mt-16 mr-6 px-1 shadow-xl
-                          xl:w-6/12 xl:-mt-24 2xl:-mt-40 2xl:mr-10 2xl:px-0"
+                          xl:w-6/12 xl:-mt-24 2xl:-mt-36 2xl:mr-10 2xl:px-0"
                    src="~/static/img/logo-NacaoAlvinegraBr.webp"
                    alt="Logo Nação Alvinegra"
               >
@@ -115,7 +120,7 @@
           <div class="bg-contain bg-no-repeat w-full">
             <img class="relative" src="~/static/img/footer-purple-bg.png" alt="Footer background">
             <div class="absolute top-0 w-full">
-              <div class="container flex text-sm pt-20 xl:px-0 c-social-links">
+              <div class="container flex text-sm pt-16 xl:px-0 c-social-links">
                 <div class="w-1/3 text-black text-right">
                   <p>
                     <a href="https://www.instagram.com/sociovozao/" target="_blank">
@@ -157,6 +162,10 @@
                     vozaotv
                   </a>
                 </div>
+              </div>
+              <div class="container flex items-center mt-8 pl-2 pb-3 text-white text-xs lg:px-6 xl:mt-10">
+                <p>Powered by</p>
+                <img class="-mt-1 ml-2 w-20" src="~/static/img/fanbase.png" alt="Logo Fanbase">
               </div>
             </div>
           </div>
