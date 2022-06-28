@@ -70,7 +70,7 @@
           <img id="fixed-logo"
                class="absolute top-0 left-0 ml-3 mt-5 shadow-lg transform duration-300 -rotate-3"
                :class="[scrollDown ? 'w-32 lg:mt-5 lg:w-48 xl:w-56' : 'ml-3 w-48 xl:mt-8 lg:w-72 xl:w-80']"
-               src="~/static/img/logo-NacaoAlvinegraBr.webp"
+               src="~/static/img/logo-NacaoAlvinegra-white.webp"
                alt="Logo Nação Alvinegra"
           />
         </nuxt-link>
