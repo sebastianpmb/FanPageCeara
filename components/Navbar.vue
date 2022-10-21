@@ -12,50 +12,26 @@
           class="w-full mb-24 pt-12 flex flex-col justify-end items-center"
         >
           <div class="w-full flex justify-end">
-            <button class="flex content-center mr-12 hover:text-yellow-700" @click="closeSideBar">
+            <button class="flex content-center mr-12 hover:text-neutral-900" @click="closeSideBar">
               <font-awesome-icon class="fa-2x px-1 -mt-1" icon="xmark"/>
               <span class="ml-2">Fechar</span>
             </button>
           </div>
-          <ul class="mt-12 w-full" @click="closeSideBar">
-<!--            <nuxt-link to="/" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.fullPath === '/'}"-->
-<!--              >-->
-<!--                PROJETO-->
-<!--              </li>-->
-<!--            </nuxt-link>-->
-<!--            <nuxt-link :to="{ path: '/',hash:'#sec2'}" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.fullPath === '/#sec2'}"-->
-<!--              >-->
-<!--                VOZÃO-->
-<!--              </li>-->
-<!--            </nuxt-link>-->
-<!--            <nuxt-link to="/regulamento" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/regulamento'}"-->
-<!--              >-->
-<!--                REGULAMENTO-->
-<!--              </li>-->
-<!--            </nuxt-link>-->
-<!--            <nuxt-link to="/faq" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/faq'}"-->
-<!--              >-->
-<!--                FAQ-->
-<!--              </li>-->
-<!--            </nuxt-link>-->
-<!--            <a href="https://censo.nacaoalvinegra.com/" target="_blank" class="hover:text-neutral-900">-->
-<!--              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"-->
-<!--                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === '/censo'}"-->
-<!--              >-->
-<!--                CLIQUE E PARTICIPE-->
-<!--              </li>-->
-<!--            </a>-->
-<!--            <li class="py-6 pl-8 border-b-2 border-neutral-700 text-neutral-400">-->
-<!--              VOTE EM BREVE-->
-<!--            </li>-->
+          <ul v-for="(link, index) in links" :key="index" class="first:mt-12 w-full" @click="closeSideBar">
+            <nuxt-link v-if="link.type === 'internal'" :to="link.to" class="hover:text-neutral-900">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"
+                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.fullPath === link.fullPath}"
+              >
+                {{ link.text }}
+              </li>
+            </nuxt-link>
+            <a v-else-if="link.type === 'external'" :href="link.href" target="_blank" class="hover:text-neutral-900">
+              <li class="py-6 pl-8 border-b-2 border-neutral-700 hover:bg-yellow-700 hover:text-black transition duration-300"
+                  :class="{'text-yellow-700 underline underline-offset-4 hover:text-black' : $route.path === link.fullPath}"
+              >
+                {{ link.text }}
+              </li>
+            </a>
           </ul>
         </div>
       </div>
@@ -69,36 +45,25 @@
         <nuxt-link to="/">
           <img id="fixed-logo"
                class="absolute top-0 left-0 ml-3 mt-5 shadow-lg transform duration-300 -rotate-3"
-               :class="[scrollDown ? 'w-32 lg:mt-5 lg:w-48 xl:w-56' : 'ml-3 w-48 xl:mt-8 lg:w-72 xl:w-80']"
+               :class="[scrollDown ? 'w-32 lg:mt-5 lg:w-40 xl:w-56' : 'ml-3 w-48 xl:mt-8 lg:w-56 xl:w-72']"
                src="~/static/img/logo-NacaoAlvinegra-white.webp"
                alt="Logo Nação Alvinegra"
           />
         </nuxt-link>
-        <ul class="hidden flex-row justify-between items-center lg:flex lg:w-5/12 xl:w-6/12 xl:px-10">
-<!--          <li class="text-base" :class="{'underline underline-offset-4' : $route.fullPath === '/'}">-->
-<!--            <nuxt-link to="/">PROJETO</nuxt-link>-->
-<!--          </li>-->
-<!--          |-->
-<!--          <li class="text-base" :class="{'underline underline-offset-4' : $route.fullPath === '/#sec2'}">-->
-<!--            <nuxt-link :to="{ path: '/',hash:'#sec2'}">VOZÃO</nuxt-link>-->
-<!--          </li>-->
-<!--          |-->
-<!--          <li class="text-base" :class="{'underline underline-offset-4' : $route.path === '/regulamento'}">-->
-<!--            <nuxt-link to="/regulamento">REGULAMENTO</nuxt-link>-->
-<!--          </li>-->
-<!--          |-->
-<!--          <li class="text-base" :class="{'underline underline-offset-4' : $route.path === '/faq'}">-->
-<!--            <nuxt-link to="/faq">FAQ</nuxt-link>-->
-<!--          </li>-->
-<!--          |-->
-<!--          <li class="text-base" :class="{'underline underline-offset-4' : $route.path === '/censo'}">-->
-<!--            <a href="https://censo.nacaoalvinegra.com/" target="_blank">CLIQUE E PARTICIPE</a>-->
-<!--          </li>-->
+        <ul class="hidden flex-row justify-between items-center lg:flex lg:w-6/12 xl:w-7/12 xl:px-10">
+          <li v-for="(link, index) in links" :key="index">
+            <span class="text-base" :class="{'underline underline-offset-4' : $route.fullPath === link.fullPath}">
+              <nuxt-link v-if="link.type === 'internal'" :to="link.to">{{ link.text }}</nuxt-link>
+              <a v-else-if="link.type === 'external'" :href="link.href" target="_blank">
+                {{ link.text }}
+              </a>
+            </span>
+          </li>
           <div class="flex absolute right-0 mr-8">
             <div class="mt-1 ml-5 text-right font-sans md:ml-8 transform duration-300"
                  :class="[scrollDown ? 'text-sm' : 'text-lg']">
-              <p class="uppercase font-extrabold leading-none">Vozão ID</p>
-              <span class="text-black font-light">
+              <p class="uppercase font-extrabold leading-none">{{ login.idName }}</p>
+              <span class="text-stone-950 font-light">
                 <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
               </span>
             </div>
@@ -121,14 +86,14 @@
 
         <!-- mobile buttons -->
         <div class="flex items-center lg:hidden">
-<!--          <button class="hover:text-yellow-700" @click="openSideBar">-->
-<!--            <font-awesome-icon class="fa-2x px-1" icon="bars"/>-->
-<!--          </button>-->
+          <button v-if="links.length" class="hover:text-yellow-700" @click="openSideBar">
+            <font-awesome-icon class="fa-2x px-1" icon="bars"/>
+          </button>
           <div class="ml-5 text-right font-sans transform duration-300 md:ml-8"
                :class="[scrollDown ? 'text-xs' : 'text-base']"
           >
-            <p class="uppercase font-extrabold leading-none">Vozão ID</p>
-            <span class="text-black font-light">
+            <p class="uppercase font-extrabold leading-none">{{ login.idName }}</p>
+            <span class="text-stone-950 font-light">
               <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
             </span>
           </div>
@@ -150,13 +115,48 @@
 </template>
 <script>
 export default {
-  name: 'navbar',
+  name: 'TheNav',
   data () {
     return {
       sidebar: false,
       profileNotify: 0,
       lastScrollTop: 0,
-      scrollDown: false
+      scrollDown: false,
+      login: {
+        idName: 'Vozão ID'
+      },
+      links: [
+        // {
+        //   type: 'internal',
+        //   text: 'PROJETO',
+        //   to: { path: '/' },
+        //   fullPath: '/'
+        // },
+        // {
+        //   type: 'internal',
+        //   text: 'VOZÃO',
+        //   to: { path: '/', hash: '#sec2' },
+        //   fullPath: '/#sec2'
+        // },
+        // {
+        //   type: 'internal',
+        //   text: 'REGULAMENTO',
+        //   to: { path: '/regulamento' },
+        //   fullPath: '/regulamento'
+        // },
+        // {
+        //   type: 'internal',
+        //   text: 'FAQ',
+        //   to: { path: '/faq' },
+        //   fullPath: '/faq'
+        // },
+        // {
+        //   type: 'external',
+        //   text: 'CLIQUE E PARTICIPE',
+        //   href: 'https://censo.nacaoalvinegra.com/',
+        //   fullPath: '/censo'
+        // }
+      ]
     }
   },
   mounted() {
