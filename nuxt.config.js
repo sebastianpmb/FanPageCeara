@@ -20,6 +20,13 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap'
       }
+    ],
+    script: [
+      {
+        // Script for Vozão Digital - WebView Js API
+        src: 'https://cdn-sd.tecfun.com.br/dev/vd_api_0.0.6.js',
+        body: true
+      }
     ]
   },
 
