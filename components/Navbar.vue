@@ -62,8 +62,11 @@
           <div class="flex absolute right-0 mr-8">
             <div class="mt-1 ml-5 text-right font-sans md:ml-8 transform duration-300"
                  :class="[scrollDown ? 'text-sm' : 'text-lg']">
-              <p class="uppercase font-extrabold leading-none">{{ login.idName }}</p>
-              <span class="text-stone-950 font-light">
+              <p
+                class="font-extrabold leading-none"
+                :class="[ name1 ? '' : 'mt-1 uppercase xl:mt-2']"
+              >{{ name1 ? name1.split(' ')[0] : login.idName }}</p>
+              <span v-if="!isAuthenticated" class="text-stone-950 font-light">
                 <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
               </span>
             </div>
@@ -92,8 +95,13 @@
           <div class="ml-5 text-right font-sans transform duration-300 md:ml-8"
                :class="[scrollDown ? 'text-xs' : 'text-base']"
           >
-            <p class="uppercase font-extrabold leading-none">{{ login.idName }}</p>
-            <span class="text-stone-950 font-light">
+            <p
+              class="font-extrabold leading-none"
+              :class="[name1 ? '' : 'uppercase']"
+            >
+              {{ name1 ? name1.split(' ')[0] : login.idName }}
+            </p>
+            <span v-if="!isAuthenticated" class="text-stone-950 font-light">
               <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
             </span>
           </div>
@@ -114,6 +122,8 @@
   </nav>
 </template>
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'TheNav',
   data () {
@@ -157,6 +167,14 @@ export default {
         //   fullPath: '/censo'
         // }
       ]
+    }
+  },
+  computed: {
+    ...mapState({
+      isAuthenticated: state => state.sso.isAuthenticated
+    }),
+    name1 () {
+      return this.$store.getters['sso/name1']
     }
   },
   mounted() {
