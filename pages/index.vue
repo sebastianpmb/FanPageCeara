@@ -80,11 +80,18 @@ export default {
       }
       this.$axios.$post(url, payload)
         .then((res) => {
-          window.open(`https://censo.nacaoalvinegra.com/?authToken=${res.data.data.access_token}`, '_blank')
+          if (res.data.data.access_token) {
+            this.redirectWithToken(res.data && res.data.data.access_token)
+          } else {
+            window.open('https://censo.nacaoalvinegra.com/', '_blank')
+          }
         })
         .catch((err) => {
           alert(err)
         })
+    },
+    redirectWithToken (token) {
+      window.open(`https://censo.nacaoalvinegra.com/?authToken=${token}`, '_blank')
     }
   }
 }
