@@ -10,12 +10,13 @@
                      sm:text-6xl md:text-7xl lg:text-9xl">
             O Ceará quer jogar com você!
           </h1>
-          <a href="https://censo.nacaoalvinegra.com/"
-             target="_blank"
-             class="inline-block mb-14 py-3 px-20 font-noodle rounded text-black bg-yellow-700 text-3xl
-             hover:text-black hover:opacity-80 md:text-4xl">
+          <button
+            class="inline-block mb-14 py-3 px-20 font-noodle rounded text-black bg-yellow-700 text-3xl
+             hover:text-black hover:opacity-80 md:text-4xl"
+            @click="goToSurvey"
+          >
             QUERO PARTICIPAR!
-          </a>
+          </button>
         </article>
       </div>
     </header>
@@ -55,8 +56,36 @@
 <script>
 
 export default {
+  name: 'IndexPage',
   layout: 'default',
   transition: 'pageSlide',
-  name: 'IndexPage'
+  methods: {
+    goToSurvey () {
+      if (this.$store.state.sso.isAuthenticated) {
+        this.getTokenAndGoToSurvey()
+      } else {
+        window.open('https://censo.nacaoalvinegra.com/', '_blank')
+      }
+    },
+    getTokenAndGoToSurvey () {
+      const url = 'https://connect.fanbase.com.br/api/login2'
+      const payload = {
+        id: this.$store.state.sso.userData.data.cpf,
+        password: '',
+        loginType: 1,
+        systemId: 2,
+        RecId: 96,
+        ownerId: 23,
+        subDomainLogin: ''
+      }
+      this.$axios.$post(url, payload)
+        .then((res) => {
+          window.open(`https://censo.nacaoalvinegra.com/?authToken=${res.data.data.access_token}`, '_blank')
+        })
+        .catch((err) => {
+          alert(err)
+        })
+    }
+  }
 }
 </script>
