@@ -81,8 +81,10 @@ export default {
       this.$axios.$post(url, payload)
         .then((res) => {
           if (res.data && res.data.data && res.data.data.access_token) {
+            alert('Acesso com CPF')
             this.redirectWithToken(res.data.data.access_token)
           } else {
+            alert('Acesso sem CPF')
             window.open('https://censo.nacaoalvinegra.com/', '_blank')
           }
         })
