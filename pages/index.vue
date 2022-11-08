@@ -91,7 +91,9 @@ export default {
         })
     },
     redirectWithToken (token) {
-      window.open(`https://censo.nacaoalvinegra.com/?authToken=${token}`, '_blank')
+      const url = `https://censo.nacaoalvinegra.com/?authToken=${token}`
+      alert(url)
+      window.open(url, '_blank')
     }
   }
 }
