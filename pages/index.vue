@@ -80,8 +80,8 @@ export default {
       }
       this.$axios.$post(url, payload)
         .then((res) => {
-          if (res.data && res.data.data && res.data.data.access_token) {
-            this.redirectWithToken(res.data.data.access_token)
+          if (res.header.codigo === 1) {
+            this.redirectWithToken(res.data.access_token)
           } else {
             window.open('https://censo.nacaoalvinegra.com/', '_blank')
           }
