@@ -80,7 +80,6 @@ export default {
       }
       this.$axios.$post(url, payload)
         .then((res) => {
-          alert(JSON.stringify(res.data))
           if (res.data && res.data.data && res.data.data.access_token) {
             this.redirectWithToken(res.data.data.access_token)
           } else {
