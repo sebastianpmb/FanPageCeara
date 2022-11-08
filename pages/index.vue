@@ -70,7 +70,7 @@ export default {
     getTokenAndGoToSurvey () {
       const url = 'https://connect.fanbase.com.br/api/login2'
       const payload = {
-        id: this.$store.state.sso.userData.data.cpf,
+        id: String(this.$store.state.sso.userData.data.cpf),
         password: '',
         loginType: 1,
         systemId: 2,
