@@ -69,7 +69,6 @@ export default {
     },
     getTokenAndGoToSurvey () {
       const url = 'https://connect.fanbase.com.br/api/login2'
-      alert('Você está logando com o seguinte cpf: ' + this.$store.state.sso.userData.data.cpf)
       const payload = {
         id: this.$store.state.sso.userData.data.cpf,
         password: '',
