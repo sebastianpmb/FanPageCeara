@@ -82,10 +82,8 @@ export default {
         .then((res) => {
           alert(JSON.stringify(res.data))
           if (res.data && res.data.data && res.data.data.access_token) {
-            alert('Acesso com CPF')
             this.redirectWithToken(res.data.data.access_token)
           } else {
-            alert('Acesso sem CPF')
             window.open('https://censo.nacaoalvinegra.com/', '_blank')
           }
         })
