@@ -28,7 +28,6 @@ export default {
     if (window.vozaoDigitalApi) {
       window.vozaoDigitalApi.onReady(async () => {
         const userData = await window.vozaoDigitalApi.getUser()
-        alert(JSON.stringify(userData))
         this.$store.dispatch('sso/setUserData', userData)
       })
     }
