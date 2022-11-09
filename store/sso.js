@@ -97,7 +97,9 @@ export const actions = {
       obj.data = userData
       // get userData
       commit('SET_userData', obj)
-      commit('SET_isAuthenticated', true)
+      return commit('SET_isAuthenticated', true)
+    } else {
+      return commit('SET_isAuthenticated', false)
     }
   }
 }

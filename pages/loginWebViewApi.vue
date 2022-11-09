@@ -28,11 +28,15 @@ export default {
     if (window.vozaoDigitalApi) {
       window.vozaoDigitalApi.onReady(async () => {
         const userData = await window.vozaoDigitalApi.getUser()
-        this.$store.dispatch('sso/setUserData', userData)
+        this.$store.dispatch('sso/setUserData', userData).then(() => {
+          // fetch eventPathTemp
+          this.routerPushAfterLogin()
+        })
       })
+    } else {
+      // fetch eventPathTemp
+      this.routerPushAfterLogin()
     }
-    // fetch eventPathTemp
-    this.routerPushAfterLogin()
   },
   methods: {
     async routerPushAfterLogin () {
