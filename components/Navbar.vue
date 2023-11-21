@@ -67,7 +67,7 @@
                 :class="[ name1 ? '' : 'mt-1 uppercase xl:mt-2']"
               >{{ name1 ? name1.split(' ')[0] : login.idName }}</p>
               <span v-if="!isAuthenticated" class="text-stone-950 font-light">
-                <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
+                <a href="https://login-vozao.fan-id.app.br/Cadastro" target="_blank">Cadastrar</a>
               </span>
             </div>
             <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-700">
@@ -102,7 +102,7 @@
               {{ name1 ? name1.split(' ')[0] : login.idName }}
             </p>
             <span v-if="!isAuthenticated" class="text-stone-950 font-light">
-              <a href="https://cadastro.vozaoid.com/" target="_blank">Cadastrar</a>
+              <a href="https://login-vozao.fan-id.app.br/Cadastro" target="_blank">Cadastrar</a>
             </span>
           </div>
           <button class="relative w-7 -mt-1 ml-3 fill-zinc-900 hover:fill-yellow-700">
